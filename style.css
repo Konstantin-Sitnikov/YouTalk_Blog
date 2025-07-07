@@ -60,6 +60,7 @@ body {
     border-radius: 4px;
     margin-right: 120px;
     color: #03B2A5;
+    font-family: Montserrat-Bold;
     font-size: 16px;
 }
 
@@ -82,12 +83,41 @@ body {
 
 
 
-.main {
+main {
     width: 1440px;
     margin: auto;
-      
+    
     background-image: url("images/PNG/background.png");
     background-position: top 325px;
+    
 
 }
 
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.articles__first-block {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.articles__link {
+
+    display: block;
+    color: black;
+    text-decoration: none;
+    white-space: wrap;
+    
+}
+
+.articles_article {
+
+    display: flex;
+    flex-direction: column;
+    
+}
