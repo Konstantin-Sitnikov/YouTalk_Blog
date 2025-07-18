@@ -154,9 +154,15 @@
                                     </defs>
                                     </svg>                                         
                                     Self</p>
-                            </div>                          
-                            <img class="articles__article_img" src="images/PNG/article_1.png" alt="Фото">
-
+                            </div>
+                            <picture>
+                                <source srcset="images/PNG/article_1/article_1(588px).png" media="(min-width: 1440px)">
+                                <source srcset="images/PNG/article_1/article_1(468px).png" media="(min-width: 1024px) and (max-width: 1439px)">
+                                <source srcset="images/PNG/article_1/article_1(728px).png" media="(min-width: 768px) and (max-width: 1023px)">
+                                <source srcset="images/PNG/article_1/article_1(374px).png" media="(min-width: 374px) and (max-width: 767px)">
+                                <source srcset="images/PNG/article_1/article_1(288px).png" media="(min-width: 288px) and (max-width: 373px)">
+                            <img class="articles__article_img" src="images/PNG/article_1/article_1(588px).png" alt="Фото">
+                            </picture> 
                         </div>
                        
                         <div class="articles__article_info">
