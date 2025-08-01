@@ -37,6 +37,7 @@ body {
 .header__btn-submenu {
     display: none;
 }
+
 .header__submenu {
     
     padding: 0;
@@ -68,6 +69,7 @@ body {
 }
 
 .header__button {
+    margin-left: 164px;
     padding: 20px 14px 20px 14px;
     background-color: #E3F5F5;
     border: none;
@@ -90,98 +92,6 @@ body {
     white-space: nowrap;
 }
 
-@media (max-width: 1023px) {
-
-    .header {
-    justify-content: space-between;
-    }
-
-    .header__logo {
-        margin-left: 20px;
-    }
-
-    .header__btn-menu_icon {
-        margin-right: 20px;
-    }
-    
-    .header__btn-menu_icon {
-        display: flex;
-    }
-    
-   .header__menu { 
-        display: none;
-        gap: 0px;
-    }
-
-    .header__btn-menu_icon:hover {
-    cursor: pointer;
-    transform: scale(2);
-    }
-
-    .header__btn-menu:checked ~ .header__menu {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        position: absolute;
-        opacity: 100%;
-        right: 100px;
-    }
-
-
-    .header__btn-menu:checked ~ .header__btn-menu_icon {
-        transform: scale(2);
-    }
-
-    .header__item {
-        width: 200px;
-        height: 60px;
-        list-style: none;
-        position: relative;
-        background-color: #E3F5F5;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-
-    .header__submenu {
-        top: 0;
-        right: 100%;
-    }
-
-    .header__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-wrap: wrap;
-    }
-
-    .header__item:hover {
-        transform: none;
-        outline: #C1C5CD 1px solid;
-        outline-offset: -1px;
-        background-color: #FFFFFF;
-    }
-
-
-    .header__button {
-    padding: 0;    
-    color: #03B2A5;
-    font-family: Montserrat-Bold;
-    font-size: 16px;
-}
-  
-}
-
-
-
-
-
-
-
 main {    
     display: flex;
     flex-direction: column;
@@ -190,26 +100,25 @@ main {
     width: 100%;    
 }
 
-.head {
-    margin-top: 16px;
+.articles__head {
     display: flex;
     flex-direction: column;
 }
 
-.head__link {
+.articles__item_link {
     color: black;
     text-decoration: none;
     white-space: nowrap;
 }
 
-.head__item {
+.articles__item {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: end;
 }
 
-.head__position {
+.articles__position {
     margin: 0;
     padding: 0;
     display: flex;
@@ -219,14 +128,14 @@ main {
     font-size: 12px;
 }
 
-.head__header { 
+.articles__header { 
     margin-top: 30px;
     margin-bottom: 34px;
     font-size: 48px;
     font-family: Montserrat-Bold;
 }
 
-.head__filter {
+.articles__filter {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -261,7 +170,7 @@ main {
 }
 
 .articles {
-    margin-top: 35px;
+    margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -271,12 +180,9 @@ main {
 }
     
 .articles__link {
-
     display: block;
     color: black;
     text-decoration: none;
-    white-space: wrap;
-    
 }
 
 .articles__first-article {
@@ -375,6 +281,7 @@ main {
     margin: 0;
     font-size: 18px;
     font-family: Montserrat-Bold;
+    line-height: 26px;
 }
 
 .articles__article_author {
@@ -382,6 +289,7 @@ main {
     margin: 0;
     font-size: 12px;
     font-family: Montserrat-Regular;
+    line-height: 18px;
     
 }
 
@@ -390,6 +298,7 @@ main {
     margin: 0;
     font-size: 14px;
     font-family: Montserrat-Regular;
+    line-height: 20px;
     
 }
 
@@ -401,8 +310,9 @@ main {
     font-family: Montserrat-Regular;
 }
 
-.articlts_button {
+.articles_button {
     margin-top: 56px;
+    margin-bottom: 96px;
     padding: 12px 72.5px 12px 72.5px;
     background-color: #35B3A9;
     color: white;
@@ -410,8 +320,6 @@ main {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-
-
 }
 
 .articlts_button:hover {
@@ -420,7 +328,6 @@ main {
 }
 
 .footer {
-    margin-top: 96px;
     width: 100%;
     height: 302px;
     background-color: #2963A3;
@@ -601,7 +508,142 @@ main {
 }
 
 
+/* переход "header" на бургер кнопку для мобильных устройств */
+@media (max-width: 1023px) {
 
+    .header {
+    justify-content: space-between;
+    }
+
+    .header__logo {
+        margin-left: 20px;
+    }
+
+    .header__btn-menu_icon {
+        display: flex;
+        margin-right: 20px;
+    }
+        
+   .header__menu { 
+        display: none;
+        gap: 0px;
+        z-index: 10;
+    }
+
+    .header__btn-menu_icon:hover {
+    cursor: pointer;
+    transform: scale(2);
+    }
+
+    .header__btn-menu:checked ~ .header__menu {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        opacity: 100%;
+        right: 100px;
+    }
+
+
+    .header__btn-menu:checked ~ .header__btn-menu_icon {
+        transform: scale(2);
+    }
+
+    .header__item {
+        width: 200px;
+        height: 60px;
+        list-style: none;
+        position: relative;
+        background-color: #E3F5F5;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .header__submenu {
+        top: 0;
+        right: 100%;
+    }
+
+    .header__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-wrap: wrap;
+    }
+
+    .header__item:hover {
+        transform: none;
+        outline: #C1C5CD 1px solid;
+        outline-offset: -1px;
+        background-color: #FFFFFF;
+    }
+
+    .header__button {
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 60px;    
+    color: #03B2A5;
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    border-radius: 0px;
+    }
+
+    .header__button:hover {
+    background-color: #FFFFFF;
+    }
+  
+}
+
+/*переход на боковой скролл для фильтра 
+и вертикальную ориентацию footer для мобильных телефонов*/
+
+@media (max-width: 767px) {
+
+    .articles__filter {
+    width: 368px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    }
+
+   .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .footer__main-block {
+    flex-direction: column;
+    align-items: start;
+    }
+
+    .footer__nav {
+    width: 100%;
+    }
+
+    .footer__upper-bloсk {
+    flex-wrap: wrap;
+    flex-direction: column;
+    }
+
+    .footer__head {
+    width: 100%;
+    }
+
+    .footer__lower-bloсk {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    } 
+}
+
+/*iPadPro 12.9*/
 
 @media (min-width: 1024px) and (max-width: 1439px) {
 
@@ -626,6 +668,11 @@ main {
     height: 458px;    
     }
 
+    .articles_button {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    }
+
     .footer__main-block {
     width: 960px;
     }
@@ -637,10 +684,12 @@ main {
     .footer__subscription {
     width: 450px;
     }
-
+    .header__button {
+        margin-left: 20px;
+    }
 }
 
-
+/*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
     body {
@@ -659,6 +708,11 @@ main {
     .articles__next-article {
     width: 352px;
     height: 466px;
+    }
+
+    .articles_button {
+    margin-top: 36px;
+    margin-bottom: 55px;
     }
 
     .footer {
@@ -688,25 +742,26 @@ main {
 }
 
 
+/*iPhone 11 Pro Max */
+
 @media (min-width: 414px) and (max-width: 767px) {
 
     body {
         width: 414px;
     }
 
-    .head__filter {
-    width: 368px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-    }
-
     .head__button {
     text-wrap: nowrap;
     }
-    
     .articles {
-        margin-top: 24px;
+        gap: 16px;
+    }
+
+    .articles__header { 
+    margin-top: 32px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-family: Montserrat-Bold;
     }
 
     .articles__first-article {
@@ -719,38 +774,27 @@ main {
     height: 466px;
     }
 
+    .articles_button {
+    margin-top: 28px;
+    margin-bottom: 59px;
+    }
+
     .footer {
     height: 746px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     }
 
     .footer__main-block {
     width: 375px;
-    flex-direction: column;
-    align-items: start;
-    }
-
-    .footer__nav {
-    width: 100%;
     }
 
     .footer__upper-bloсk {
-    flex-wrap: wrap;
     row-gap: 26px;
     margin-top: 35px;
     margin-bottom: 27px;
-    flex-direction: column;
     }
-
 
     .footer__subscription {
     width: 375px;
-    }
-
-    .footer__head {
-    width: 100%;
     }
 
     .footer__form {
@@ -759,9 +803,7 @@ main {
 
     .footer__lower-bloсk {
     margin-top: 16px;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    gap: 20px;
     }
 
 }
