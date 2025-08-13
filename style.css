@@ -9,6 +9,15 @@ body {
     
 }
 
+.background-blog {
+    display: none;
+    position: absolute;
+    z-index: -10;
+    top: 403px;
+}
+
+/*Оформление заголовка*/
+
 .header {
     min-height: 76px;
     width: 100%;
@@ -92,7 +101,9 @@ body {
     white-space: nowrap;
 }
 
-main {    
+/*Основной контент*/
+
+.main-blog {    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,10 +117,9 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 1200px;
     gap: 24px;
 }
-
 
 .articles__head {
     display: flex;
@@ -153,28 +163,26 @@ main {
     flex-wrap: wrap;
 }
 
-.head__button {
+.articles__filter-btn {
     font-family: Montserrat-SemiBold;
     padding: 6px 8px 6px 8px;
     font-size: 14px;
-    border: #C1C5CD;
-    border-width: 1px;
-    background-color: #FFFFFF;
-    border-style: solid;
+    line-height: 20px;
+    border: 1px solid #C1C5CD;
     border-radius: 24px;
     box-sizing: border-box;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4px;
 }
 
-.head__button:hover {
+.articles__filter-btn:hover {
     cursor: pointer;
-    transform: scale(1.02);
 }
 
-.head__button:active {
+.articles__filter-btn:active {
     outline: 2px solid #16C8BB;
     outline-offset: -2px;
 
@@ -241,9 +249,8 @@ main {
 
 .articles__article_info {
     height: 100%;
-    border: #DEDEDE;
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
     border-radius: 0px 0px 16px 16px;
     display: flex;
     flex-direction: column;
@@ -252,8 +259,8 @@ main {
 
 .articles__article_text {
     margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 16px;
+    margin-right: 14px;
+    margin-top: 14px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -319,6 +326,10 @@ main {
     cursor: pointer;
     transform: scale(1.02);
 }
+
+
+
+
 
 .footer {
     width: 100%;
@@ -494,12 +505,9 @@ main {
 
 
 @media (min-width: 1440px) {
-    body {
-    background-image: url("images/PNG/background.png");
-    background-position-x: center;
-    background-position-y: 401px;
-    background-repeat: no-repeat;}
-  
+    .background-blog { 
+    display: inline;
+    }
 }
 
 
@@ -526,8 +534,8 @@ main {
     }
 
     .header__btn-menu_icon:hover {
-    cursor: pointer;
-    transform: scale(2);
+        cursor: pointer;
+        transform: scale(2);
     }
 
     .header__btn-menu:checked ~ .header__menu {
@@ -537,8 +545,8 @@ main {
         align-items: start;
         position: absolute;
         opacity: 100%;
-        right: 100px;
-    }
+        margin-left: -160px;
+        }
 
 
     .header__btn-menu:checked ~ .header__btn-menu_icon {
@@ -578,14 +586,14 @@ main {
     }
 
     .header__button {
-    padding: 0;
-    margin: 0;
-    width: 200px;
-    height: 60px;    
-    color: #03B2A5;
-    font-family: Montserrat-Bold;
-    font-size: 16px;
-    border-radius: 0px;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+        height: 60px;    
+        color: #03B2A5;
+        font-family: Montserrat-Bold;
+        font-size: 16px;
+        border-radius: 0px;
     }
 
     .header__button:hover {
@@ -598,14 +606,14 @@ main {
 и вертикальную ориентацию footer для мобильных телефонов*/
 
 @media (max-width: 767px) {
+    
     body {
         overflow-x: hidden;
     }
 
     .articles__filter {
-        width: 100%;
         flex-wrap: nowrap;
-        overflow-x: auto;
+        overflow-x: scroll;
         overflow-y: hidden;
     }
 
@@ -660,6 +668,7 @@ main {
     }
 
     .articles {
+        width: 960px;
         margin-top: 24px;
     }
 
@@ -701,6 +710,7 @@ main {
     }
     
     .articles {
+        width: 728px;
         margin-top: 24px;
     }
 
@@ -731,7 +741,6 @@ main {
         width: 247px;
     }
 
-
     .footer__upper-bloсk {
         flex-wrap: wrap;
         row-gap: 26px;
@@ -754,20 +763,23 @@ main {
         width: 414px;
     }
 
-    .head__button {
-    text-wrap: nowrap;
+    .articles__filter-btn {
+        text-wrap: nowrap;
     }
     .articles {
+        width: 374px;
+        flex-direction: column;
         gap: 16px;
     }
-    .articles__head { 
-    width: 374px;
+    .articles__filter {
+        width: 374px;
     }
+
     .articles__header { 
-    margin-top: 32px;
-    margin-bottom: 24px;
-    font-size: 32px;
-    font-family: Montserrat-Bold;
+        margin-top: 32px;
+        margin-bottom: 24px;
+        font-size: 32px;
+        font-family: Montserrat-Bold;
     }
 
     .articles .articles__link:nth-of-type(-n+4) .articles__article {
@@ -775,7 +787,7 @@ main {
         height: 466px;
     }
 
-    .articles .articles__link:nth-of-type(n+5) .articles__article {
+    .articles .articles__link:nth-of-type(n+5) {
         display: none;
     }
 
@@ -815,24 +827,26 @@ main {
         width: 320px;
     }
 
-    .head__button {
-    text-wrap: nowrap;
+    .articles__filter-btn {
+        text-wrap: nowrap;
     }
 
     .articles {
+        width: 288px;
+        flex-direction: column;
         gap: 16px;
     }
 
-    .articles__head { 
-    width: 288px;
+    .articles__header { 
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px;
+        font-family: Montserrat-Bold;
     }
 
-    .articles__header { 
-    margin-top: 24px;
-    margin-bottom: 24px;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: Montserrat-Bold;
+    .articles__filter {
+        width: 288px;
     }
 
     .articles .articles__link:nth-of-type(-n+4) .articles__article {
@@ -840,34 +854,34 @@ main {
         height: 484px;
     }
 
-    .articles .articles__link:nth-of-type(n+5) .articles__article {
+    .articles .articles__link:nth-of-type(n+5) {
         display: none;
     }
 
     .articles_button {
-    margin-top: 28px;
-    margin-bottom: 59px;
+        margin-top: 28px;
+        margin-bottom: 59px;
     }
 
     .footer {
-    height: 746px;
+        height: 746px;
     }
 
     .footer__main-block {
-    width: 288px;
+        width: 288px;
     }
 
     .footer__upper-bloсk {
-    row-gap: 23px;
-    margin-top: 35px;
-    margin-bottom: 27px;
+        row-gap: 23px;
+        margin-top: 35px;
+        margin-bottom: 27px;
     }
 
     .footer__subscription {
-    width: 288px;
+        width: 288px;
     }
 
     .footer__form {
-    width: 288px;
+        width: 288px;
     }
 }
