@@ -37,7 +37,7 @@ body {
 }
 
 .bkgrd-img-pos_4 {
-    margin-top: 90%;
+    bottom: 0;
 }
 
 /*Шапка сайта*/
@@ -554,22 +554,52 @@ body {
 }
 
 
-/*.article {
+.full-article {
     margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 690px;
-}*/
+}
 
-.article_author-date {
+.head__author-date {
     padding: 0;
     margin: 0;
     font-size: 14px;
     font-family: Montserrat-Regular;
     line-height: 20px;
 }
+
+.full-article__content {
+    list-style: none;
+}
+.full-article__content .full-article__item {
+    list-style-image: url(images/PNG/marker.png);
+}
+
+/*.full-article__item::marker {
+    color: #03B2A5;
+    font-size: 16px;
+
+}*/
+
+.full-article__item {
+    font-size: 16px;
+    font-family: Montserrat-Medium;
+    line-height: 24px;
+}
+
+.full-article__link {
+    color: black;
+}
+
+.full-article__item .full-article__content .full-article__item {
+    list-style-image: none;
+}
+
+
+
 
 aside {
     width: 282px;
