@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5 ,h6 {
+    font-family: Montserrat-Bold;
+}
+
 body {
     width: 1440px;
     padding: 0;
@@ -41,93 +45,7 @@ body {
 }
 
 /*Шапка сайта*/
-.header {
-    min-height: 76px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    box-shadow: inset 0px -2px 0px 0px #EFF2F2;
-}
 
-.header__blok {
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__menu {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.header__btn-menu_icon {
-    display: none;
-}
-
-.header__btn-menu {
-    display: none;
-}
-
-.header__btn-submenu {
-    display: none;
-}
-
-.header__submenu {    
-    padding: 0;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1;
-    list-style: none;
-    flex-direction: column;
-    position: absolute;
-    opacity: 100%;
-}
-
-.header__item {
-    list-style: none;
-    position: relative;
-}
-
-.header__item:hover {
-    transform: scale(1.06);
-}
-
-.header__btn-submenu:checked ~ .header__submenu {
-    clip: auto;
-    width: auto;
-    height: auto;
-    margin: 0;
-}
-
-.header__button {
-    margin-left: 164px;
-    padding: 20px 14px 20px 14px;
-    background-color: #E3F5F5;
-    border: none;
-    border-radius: 4px;
-    color: #03B2A5;
-    font-family: Montserrat-Bold;
-    font-size: 16px;
-}
-
-.header__button:hover {
-    cursor: pointer;
-}
-
-.header__link {
-    margin: 0;
-    font-family: Montserrat-Medium;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-    white-space: nowrap;
-}
 
 /*Подвал сайта*/
 .footer {
@@ -327,13 +245,9 @@ body {
 }
 
 /*Заголовок и фильтр*/
-.head {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
-.head__position {
+
+.nav-page__current-page {
     margin: 0;
     padding: 0;
     display: flex;
@@ -343,24 +257,27 @@ body {
     font-size: 12px;
 }
 
-.head__item {
+.nav-page__item {
     list-style: none;
     display: flex;
     flex-direction: row;
     align-items: end;
 }
 
-.head__link {
+.nav-page__link {
     color: black;
     text-decoration: none;
     white-space: nowrap;
 }
 
-.head__header { 
+.articles__main-headline { 
     margin-top: 30px;
     margin-bottom: 34px;
+}
+
+.main-headline--font-size {
     font-size: 48px;
-    font-family: Montserrat-Bold;
+    line-height: 56px;
 }
 
 .head__filter {
@@ -553,17 +470,43 @@ body {
     justify-content: space-between;
 }
 
-
 .full-article {
     margin-top: 16px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
     width: 690px;
+    gap: 24px;
 }
 
-.head__author-date {
+
+
+.full-article h5 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.full-article h3 {
+    font-size: 24px;
+    line-height: 32px;  
+}
+
+.full-article p, li  {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    line-height: 24px;  
+}
+
+
+.full-article__main-headline { 
+    margin-top: 54px;
+    margin-bottom: 16px;
+}
+
+
+.full-article__article-author-date {
     padding: 0;
     margin: 0;
     font-size: 14px;
@@ -571,33 +514,42 @@ body {
     line-height: 20px;
 }
 
-.full-article__content {
+/*содержание*/
+.full-article__content-article {
+    width: 588px;
+    margin: 0;
+    padding: 0;
+}
+
+.full-article__content-heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+
+.full-article__content-item {
+    margin-left: 32px;
+}
+
+.full-article__content-item::marker {
+    color: #03B2A5;
+    font-size: 24px;
+}
+
+.full-article__sub-content-article {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-.full-article__content .full-article__item {
-    list-style-image: url(images/PNG/marker.png);
+
+.full-article__sub-content-item {
+    margin-left: 24px;
 }
 
-/*.full-article__item::marker {
-    color: #03B2A5;
-    font-size: 16px;
-
-}*/
-
-.full-article__item {
-    font-size: 16px;
-    font-family: Montserrat-Medium;
-    line-height: 24px;
-}
-
-.full-article__link {
+.full-article__content-link {
     color: black;
 }
-
-.full-article__item .full-article__content .full-article__item {
-    list-style-image: none;
-}
-
 
 
 

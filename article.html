@@ -3,7 +3,7 @@
 <head lang=”ru”>
     <meta charset=”utf-8”>
     <link href="font.css" rel="stylesheet" type="text/css"/>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 
@@ -76,12 +76,11 @@
     <main class="main-article">
                 
         <section class="full-article">
-                <div class="full-article__head">
-                    <div class="head">
-                        <nav class="head__nav">
-                            <ul class="head__position">
-                                <li class="head__item"><a href="#" class="head__link">Главная</a></li>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="full-article__head">                    
+                <nav class="full-article__nav-page">
+                    <ul class="nav-page__current-page">
+                        <li class="nav-page__item"><a href="#" class="nav-page__link">Главная</a></li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_4492_2226)">
                                     <path d="M5.8125 12.6875L7.375 11.125L10.5 8L7.375 4.875L5.8125 3.3125" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </g>
@@ -90,9 +89,9 @@
                                     <rect width="16" height="16" fill="white" transform="matrix(0 1 1 0 0 0)"/>
                                     </clipPath>
                                     </defs>
-                                    </svg>
-                                <li class="head__item"><a href="#" class="head__link">Блог</a></li>
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                </svg>
+                        <li class="nav-page__item"><a href="#" class="nav-page__link">Блог</a></li>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_4492_2226)">
                                     <path d="M5.8125 12.6875L7.375 11.125L10.5 8L7.375 4.875L5.8125 3.3125" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
                                     </g>
@@ -101,39 +100,51 @@
                                     <rect width="16" height="16" fill="white" transform="matrix(0 1 1 0 0 0)"/>
                                     </clipPath>
                                     </defs>
-                                    </svg>
-                                <li class="head__item">Как не утонуть в тревоге и управлять своими страхами</li>
+                                </svg>
+                        <li class="nav-page__item">Как не утонуть в тревоге и управлять своими страхами</li>
+                    </ul>
+                </nav>
 
-                            </ul>
-                        </nav>
+                <h1 class="full-article__main-headline main-headline--font-size">Как не утонуть в тревоге и управлять своими страхами</h1>
 
-                        <div class="head__header">Как не утонуть в тревоге и управлять своими страхами</div>
-
-                        <div class="head__author-date">Автор: Лиза Файнтух · 21.08.2021</div>
-                    
-                    </div>
-
+                <div class="full-article__article-author-date">Автор: Лиза Файнтух · 21.08.2021</div>
             </div>
 
 
             <img class="full-article__img" src="images/PNG/Article/Article-image.png" alt="Главное фото">
 
-            <ul class="full-article__content">
-                <li class="full-article__item"><a class="full-article__link" href="#">Как понять, что отношения с мамой были дисфункциональными и  привели к травме?</a></li>
-                <li class="full-article__item"><a class="full-article__link" href="#">Мама привет!</a>
-                    <ul class="full-article__content">
-                        <li class="full-article__item"><a class="full-article__link" href="#">Под под заголовок под заголовком</a>
-                            <ul class="full-article__content"> 
-                                <li class="full-article__item"><a class="full-article__link" href="#">Под под под заголовок под заголовком</a>
-                                    <ul class="full-article__content"><li class="full-article__item"><a class="full-article__link" href="#">Под под под под заголовок под заголовком</a></li></ul>
-                                </li></ul>
-                        </li>
-                    </ul>
-                </li>
-                <li class="full-article__item"><a class="full-article__link" href="#">Ну вот опять заголовок который как «привет мама»</a></li>
-                <li class="full-article__item"><a class="full-article__link" href="#">Как понять, что вы страдаете от материнской травмы?</a></li>
-                
+     
+            <ul class="full-article__content-article">
+                <h5 class="full-article__content-heading">Содержание</h5>
+                <li class="full-article__content-item"><a class="full-article__content-link" href="#">Как понять, что отношения с мамой были дисфункциональными и  привели к травме?</a></li>
+                <li class="full-article__content-item"><a class="full-article__content-link" href="#">Мама привет!</a>
+                        <ul class="full-article__sub-content-article">
+                            <li class="full-article__sub-content-item"><a class="full-article__content-link" href="#">Под под заголовок под заголовком</a>
+                                <ul class="full-article__sub-content-article"> 
+                                    <li class="full-article__sub-content-item"><a class="full-article__content-link" href="#">Под под под заголовок под заголовком</a>
+                                        <ul class="full-article__sub-content-article"><li class="full-article__sub-content-item"><a class="full-article__content-link" href="#">Под под под под заголовок под заголовком</a></li></ul>
+                                    </li></ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="full-article__content-item"><a class="full-article__content-link" href="#">Ну вот опять заголовок который как «привет мама»</a></li>
+                    <li class="full-article__content-item"><a class="full-article__content-link" href="#">Как понять, что вы страдаете от материнской травмы?</a></li>
+                    
             </ul>
+
+
+            <div class="full-article__article-txt">
+                <h3>Заголовок h3</h3>
+                <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться со своими эмоциями.  Снять этот процесс с автопилота и перевести его в поле сознания.</p>
+                <p>Давайте, к примеру, разберем тревогу. Можно разложить перед собой целую коллекцию доступных реакций и выбрать нужную:</p>
+                
+                <div class="full-article__quote">
+                    <p class="full-article__quote-text">Мы знаем, что нуждаться в помощи и поддержке в трудные периоды жизни абсолютно нормально для любого человека, и стремимся сделать психотерапию безопасной, удобной и доступной каждому</p>
+                    <h5>Ана Крымская</h3>
+                </div>
+
+            </div>
+
 
             
        </section>
