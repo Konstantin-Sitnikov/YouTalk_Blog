@@ -2,16 +2,6 @@ h1, h2, h3, h4, h5 ,h6 {
     font-family: Montserrat-Bold;
 }
 
-body {
-    width: 1440px;
-    padding: 0;
-    margin: auto;    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
 
 .bkgrd-img {
     display: none;
@@ -48,177 +38,7 @@ body {
 
 
 /*Подвал сайта*/
-.footer {
-    width: 100%;
-    height: 302px;
-    background-color: #2963A3;
-    display: flex;
-    justify-content: center;
 
-}
-
-.footer__main-block {
-    width: 1200px;
-}
-
-.footer__upper-bloсk {
-    margin-top: 40px;
-    margin-bottom: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-}
-
-.footer__nav {
-    display: flex;
-    width: 310px;
-    height: 184px;
-    justify-content: space-between;
-
-}
-
-.footer__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
-
-}
-
-.footer__link {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-family: Montserrat-Bold;
-    text-wrap: nowrap;
-    text-decoration: none;
-}
-
-.footer__item {
-    list-style: none;
-}
-
-.footer__subscription {
-    width: 488px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
-
-}
-
-.footer__head {
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: Montserrat-Bold;
-    width: 90%;
-}
-
-.footer__email {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: left;
-}
-
-.footer__form {
-    width: 384px;
-    height: 48px;
-    font-size: 14px;
-    font-family: Montserrat-Regular;
-    border: none;
-    border-radius: 4px;
-}
-
-.footer__form:focus {
-    outline: none;
-}
-
-.footer__button {
-    width: 68px;
-    height: 48px;
-    position: relative;
-    right: 68px;
-    border: none;
-    border-radius: 4px;
-    background-color: #16C8BB;
-}
-
-.footer__button:hover {
-    cursor: pointer;
-}
-
-.footer__text {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: Montserrat-Regular;
-    color: #FFFFFF;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    opacity: 0.7;
-}
-
-.footer__social {
-    width: 221px;
-    height: 122px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.footer__networks {
-
-    display: flex;
-    gap: 16px;
-    justify-content: flex-start;
-
-}
-
-.footer__networks_link {
-    text-decoration: none;
-
-    margin: 0;
-    padding: 0;
-}
-
-.footer__line {
-    margin: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #9D9D9D;
-    border: none;
-    opacity: 0.3;
-}
-
-.footer__lower-bloсk {
-    margin-top: 16px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 48px;
-
-}
-
-.footer__lower_text {
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: Montserrat-Regular;
-    opacity: 0.7;
-    line-height: 20px;
-}
-
-.footer__lower_link {
-    text-decoration: none;
-}
 
 /*Основной контент*/
 /*Главная страница блога*/
@@ -281,6 +101,7 @@ body {
 }
 
 .head__filter {
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -438,7 +259,7 @@ body {
     font-family: Montserrat-Regular;
 }
 
-
+/*
 .button {
     background-color: #35B3A9;
     color: white;
@@ -447,6 +268,7 @@ body {
     border: none;
     border-radius: 4px;
 }
+    */
 
 .articles-btn-position {
     margin-top: 56px;
@@ -573,92 +395,7 @@ aside {
 }
 
 
-/* переход "header" на бургер кнопку для мобильных устройств */
-@media (max-width: 1023px) {
 
-    .header__logo {
-        margin-left: 20px;
-    }
-
-    .header__btn-menu_icon {
-        display: flex;
-        margin-right: 20px;
-    }
-        
-   .header__menu { 
-        display: none;
-        gap: 0px;
-        z-index: 10;
-    }
-
-    .header__btn-menu_icon:hover {
-        cursor: pointer;
-        transform: scale(2);
-    }
-
-    .header__btn-menu:checked ~ .header__menu {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        position: absolute;
-        opacity: 100%;
-        margin-left: -160px;
-        }
-
-
-    .header__btn-menu:checked ~ .header__btn-menu_icon {
-        transform: scale(2);
-    }
-
-    .header__item {
-        width: 200px;
-        height: 60px;
-        list-style: none;
-        position: relative;
-        background-color: #E3F5F5;
-        border: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-    .header__submenu {
-        top: 0;
-        right: 100%;
-    }
-
-    .header__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-wrap: wrap;
-    }
-
-    .header__item:hover {
-        transform: none;
-        outline: #C1C5CD 1px solid;
-        outline-offset: -1px;
-        background-color: #FFFFFF;
-    }
-
-    .header__button {
-        padding: 0;
-        margin: 0;
-        width: 200px;
-        height: 60px;    
-        color: #03B2A5;
-        font-family: Montserrat-Bold;
-        font-size: 16px;
-        border-radius: 0px;
-    }
-
-    .header__button:hover {
-    background-color: #FFFFFF;
-    }
-  
-}
 
 /*переход на боковой скролл для фильтра 
 и вертикальную ориентацию footer для мобильных телефонов*/
@@ -670,15 +407,12 @@ aside {
     }
 
     .head__filter {
+        z-index: 99;
         flex-wrap: nowrap;
-        overflow-x: scroll;
+        white-space: nowrap;
+        overflow-x: auto;
         overflow-y: hidden;
-    }
-
-   .footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        scrollbar-width: none;
     }
 
     .footer__main-block {
@@ -717,22 +451,6 @@ aside {
 
 @media (min-width: 1024px) and (max-width: 1439px) {
 
-    body {
-    width: 1024px;
-    }
-
-    .header__blok {
-    width: 960px;
-    }
-
-    .header__menu {
-        gap: 16px;
-    }
-
-    .header__button {
-        margin-left: 20px;
-    }
-
     .articles {
         width: 960px;
     }
@@ -751,10 +469,6 @@ aside {
     margin-bottom: 60px;
     }
 
-    .footer__main-block {
-    width: 960px;
-    }
-
     .footer__nav {
     width: 247px;
     }
@@ -768,10 +482,6 @@ aside {
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    body {
-        width: 768px;
-    }
-    
     .articles {
         width: 728px;
     }
@@ -791,13 +501,6 @@ aside {
         margin-bottom: 55px;
     }
 
-    .footer {
-        height: 454px;
-    }
-
-    .footer__main-block {
-        width: 728px;
-    }
 
     .footer__nav {
         width: 247px;
@@ -820,10 +523,6 @@ aside {
 /*iPhone 11 Pro Max */
 
 @media (min-width: 414px) and (max-width: 767px) {
-
-    body {
-        width: 414px;
-    }
 
     .articles {
         width: 374px;
@@ -852,14 +551,6 @@ aside {
     margin-bottom: 59px;
     }
 
-    .footer {
-    height: 746px;
-    }
-
-    .footer__main-block {
-    width: 375px;
-    }
-
     .footer__upper-bloсk {
     row-gap: 26px;
     margin-top: 35px;
@@ -878,11 +569,6 @@ aside {
 
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
-
-    body {
-        width: 320px;
-    }
-
 
     .articles {
         width: 288px;
@@ -910,14 +596,6 @@ aside {
     .articles-btn-position {
         margin-top: 28px;
         margin-bottom: 59px;
-    }
-
-    .footer {
-        height: 746px;
-    }
-
-    .footer__main-block {
-        width: 288px;
     }
 
     .footer__upper-bloсk {

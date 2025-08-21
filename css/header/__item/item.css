@@ -1,0 +1,32 @@
+.header__item {
+    list-style: none;
+    position: relative;
+}
+
+.header__item:hover {
+    transform: scale(1.06);
+}
+
+
+@media (max-width: 1023px) {
+        .header__item {
+        width: 200px;
+        height: 60px;
+        list-style: none;
+        position: relative;
+        background-color: #E3F5F5;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .header__item:hover {
+        transform: none;
+        outline: #C1C5CD 1px solid;
+        outline-offset: -1px;
+        background-color: #FFFFFF;
+    }
+
+}

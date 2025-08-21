@@ -1,0 +1,30 @@
+@import url(__head/head.css);
+@import url(__logo/logo.css);
+@import url(__menu/menu.css);
+@import url(__item/item.css);
+@import url(__item/item--hidden.css);
+@import url(__link/link.css);
+
+
+.header {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: inset 0px -2px 0px 0px #EFF2F2;
+}
+
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+    .header {
+        height: 72px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        height: 76px;
+    }
+}

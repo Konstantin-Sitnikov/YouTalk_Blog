@@ -3,18 +3,26 @@
 <head lang=”ru”>
     <meta charset=”utf-8”>
     <link href="font.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/layout/main.css" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/header/header.css" type="text/css">
+    <link rel="stylesheet" href="css/footer/footer.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="css/button/button.css" type="text/css">
+    <link rel="stylesheet" href="css/button/button--header.css" type="text/css">
+
+
 
 </head>
 
 
-<body>
+<body class="body">
     <img class="bkgrd-img blog-bkgrd-img-pos" src="images/PNG/background/Blog.png" alt="Фоновое изображение">
 
 
     <header class="header">
-        <div class="header__blok">
+        <div class="header__head">
             <div class="header__logo">
                 <svg width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_4492_2245)">
@@ -36,7 +44,7 @@
 
             <nav class="header__nav">
                 <input type="checkbox" class="header__btn-menu" id="header__btn-menu" />
-                <label for="header__btn-menu" class="header__btn-menu_icon">
+                <label for="header__btn-menu" class="header__menu-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 14C11 13.4477 11.4477 13 12 13H28C28.5523 13 29 13.4477 29 14C29 14.5523 28.5523 15 28 15H12C11.4477 15 11 14.5523 11 14ZM11 20C11 19.4477 11.4477 19 12 19H28C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21H12C11.4477 21 11 20.5523 11 20ZM11 26C11 25.4477 11.4477 25 12 25H28C28.5523 25 29 25.4477 29 26C29 26.5523 28.5523 27 28 27H12C11.4477 27 11 26.5523 11 26Z" fill="#03B2A5"/>
                     </svg>
@@ -64,9 +72,12 @@
                     </li>
                     
                     <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
-                    <li class="header__item"><button type="button" class="header__button">Подобрать психолога</button></li>
+                    <li class="header__item header__item--hidden"><a href="#" class="header__link">Подобрать психолога</a></li>
                 </ul>
             </nav>
+
+            <button type="button" class="button button--header">Подобрать психолога</button>
+
         </div> 
 
     </header>
@@ -532,7 +543,7 @@
 
     <footer class="footer">
         <div class="footer__main-block">
-            <div class="footer__upper-bloсk">                
+            <div class="footer__nav-sub-soc">                
                 <nav class="footer__nav">
                     <ul class="footer__list">
                         <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>

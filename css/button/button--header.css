@@ -1,0 +1,11 @@
+.button--header {
+    padding: 20px 14px 20px 14px;
+    background-color: #E3F5F5;
+    color: #03B2A5;
+}
+
+@media screen and (max-width: 1023px) {
+    .button--header {
+        display: none;
+    }
+}
