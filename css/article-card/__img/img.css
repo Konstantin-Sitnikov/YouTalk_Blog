@@ -1,0 +1,80 @@
+
+.article-card__img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+
+.content__articles .article-card:nth-of-type(-n+2) .article-card__img {
+    width: 588px;
+    height: 260px;
+}
+
+.content__articles .article-card:nth-of-type(n+3) .article-card__img {
+    width: 384px;
+    height: 260px;
+}
+
+
+/*iPadPro 12.9*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .content__articles .article-card:nth-of-type(-n+2) .article-card__img {
+        width: 468px;
+        height: 260px;
+}
+
+    .content__articles .article-card:nth-of-type(n+3) .article-card__img {
+        width: 304px;
+        height: 206px;
+    }
+
+}
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .content__articles .article-card:nth-of-type(-n+2) .article-card__img {
+        width: 728px;
+        height: 404px;
+}
+
+    .content__articles .article-card:nth-of-type(n+3) .article-card__img {
+        width: 352px;
+        height: 206px;
+    }
+
+
+}
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    
+    .content__articles .article-card:nth-of-type(-n+4) .article-card__img {
+        width: 374px;
+        height: 206px;
+    }
+
+    .content__articles .article-card:nth-of-type(n+5) .article-card__img {
+        display: none;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+    
+    .content__articles .article-card:nth-of-type(-n+4) .article-card__img {
+        width: 288px;
+        height: 206px;
+    }
+
+    .content__articles .article-card:nth-of-type(n+5) .article-card__img {
+        display: none;
+    }
+
+
+}

@@ -1,6 +1,11 @@
 
-@import url(__main-block/main-block.css);
+@import url(__body/body.css);
 @import url(__nav-sub-soc/nav-sub-soc.css);
+@import url(__nav/nav.css);
+@import url(__subscription/subscription.css);
+@import url(__social/social.css);
+@import url(__line/line.css);
+@import url(__lower-block/lower-block.css);
 
 
 .footer {
@@ -12,159 +17,6 @@
 
 }
 
-.footer__nav {
-    display: flex;
-    width: 310px;
-    height: 184px;
-    justify-content: space-between;
-
-}
-
-.footer__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 16px;
-
-}
-
-.footer__link {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-family: Montserrat-Bold;
-    text-wrap: nowrap;
-    text-decoration: none;
-}
-
-.footer__item {
-    list-style: none;
-}
-
-.footer__subscription {
-    width: 488px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 8px;
-
-}
-
-.footer__head {
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-family: Montserrat-Bold;
-    width: 90%;
-}
-
-.footer__email {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: left;
-}
-
-.footer__form {
-    width: 384px;
-    height: 48px;
-    font-size: 14px;
-    font-family: Montserrat-Regular;
-    border: none;
-    border-radius: 4px;
-}
-
-.footer__form:focus {
-    outline: none;
-}
-
-.footer__button {
-    width: 68px;
-    height: 48px;
-    position: relative;
-    right: 68px;
-    border: none;
-    border-radius: 4px;
-    background-color: #16C8BB;
-}
-
-.footer__button:hover {
-    cursor: pointer;
-}
-
-.footer__text {
-    margin: 0;
-    padding: 0;
-    font-size: 12px;
-    font-family: Montserrat-Regular;
-    color: #FFFFFF;
-    line-height: 18px;
-    letter-spacing: 0.25px;
-    opacity: 0.7;
-}
-
-.footer__social {
-    width: 221px;
-    height: 122px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.footer__networks {
-
-    display: flex;
-    gap: 16px;
-    justify-content: flex-start;
-
-}
-
-.footer__networks_link {
-    text-decoration: none;
-
-    margin: 0;
-    padding: 0;
-}
-
-.footer__line {
-    margin: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #9D9D9D;
-    border: none;
-    opacity: 0.3;
-}
-
-.footer__lower-bloсk {
-    margin-top: 16px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 48px;
-
-}
-
-.footer__lower_text {
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: Montserrat-Regular;
-    opacity: 0.7;
-    line-height: 20px;
-}
-
-.footer__lower_link {
-    text-decoration: none;
-}
-
-
-
 @media (max-width: 767px) {
        .footer {
         height: 746px;
@@ -173,7 +25,6 @@
         align-items: center;
     }
 }
-
 
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {

@@ -1,7 +1,3 @@
-h1, h2, h3, h4, h5 ,h6 {
-    font-family: Montserrat-Bold;
-}
-
 
 .bkgrd-img {
     display: none;
@@ -34,170 +30,23 @@ h1, h2, h3, h4, h5 ,h6 {
     bottom: 0;
 }
 
-/*Шапка сайта*/
-
-
-/*Подвал сайта*/
 
 
 /*Основной контент*/
 /*Главная страница блога*/
-.main-blog {    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;    
-}
 
-.articles {    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-}
 
-.articles__head {
-    margin-top: 16px;
-    margin-bottom: 24px;
-    width: 100%;
-}
 
 /*Заголовок и фильтр*/
 
 
-.nav-page__current-page {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    font-family: Montserrat-Regular;
-    font-size: 12px;
-}
 
-.nav-page__item {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-}
-
-.nav-page__link {
-    color: black;
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.articles__main-headline { 
-    margin-top: 30px;
-    margin-bottom: 34px;
-}
-
-.main-headline--font-size {
-    font-size: 48px;
-    line-height: 56px;
-}
-
-.head__filter {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-
-.head__btn {
-    font-family: Montserrat-SemiBold;
-    padding: 6px 8px 6px 8px;
-    font-size: 14px;
-    line-height: 20px;
-    border: 1px solid #C1C5CD;
-    border-radius: 24px;
-    box-sizing: border-box;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
-    text-wrap: nowrap;
-}
-
-.head__btn:hover {
-    cursor: pointer;
-}
-
-.head__btn:active {
-    outline: 2px solid #16C8BB;
-    outline-offset: -2px;
-
-}
-
-/*Блок карточек статей*/
-.articles__article-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
 
 /*Оформление кароточек статей*/
-.articles__article-card .article-card:nth-of-type(-n+2) {
-    width: 588px;
-    height: 499px;
-}
 
-.articles__article-card .article-card:nth-of-type(n+3) {
-    width: 384px;
-    height: 475px;
-}
    
-.article-card__link {
-    display: block;
-    color: black;
-    text-decoration: none;
-}
 
-.article-card__article {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #FFFFFF;
-}
 
-.article-card:hover {
-    transform: scale(1.01);
-}
-
-.article-card__tags {
-    margin-top: 8px;
-    margin-left: 8px;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.article-card__tag {
-    margin: 0;
-    padding: 6px 8px 6px 8px;
-    font-size: 14px;
-    outline: 1px solid #C1C5CD;
-    background-color: rgb(255, 255, 255, 0.7);
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    white-space: nowrap;
-}
-
-.article-card__img {
-    border-radius: 16px 16px 0px 0px;
-}
 
 .article-card__info {
     flex-grow: 1;
@@ -286,11 +135,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 /*Страница статьи*/
-.main-article {
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .full-article {
     margin-top: 16px;
@@ -302,7 +147,7 @@ h1, h2, h3, h4, h5 ,h6 {
 }
 
 
-
+/*
 .full-article h5 {
     font-size: 16px;
     line-height: 24px;
@@ -319,8 +164,7 @@ h1, h2, h3, h4, h5 ,h6 {
     font-family: Montserrat-Medium;
     font-size: 16px;
     line-height: 24px;  
-}
-
+}*/
 
 .full-article__main-headline { 
     margin-top: 54px;
@@ -406,115 +250,25 @@ aside {
         overflow-x: hidden;
     }
 
-    .head__filter {
-        z-index: 99;
-        flex-wrap: nowrap;
-        white-space: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scrollbar-width: none;
-    }
 
-    .footer__main-block {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .footer__nav {
-        width: 100%;
-    }
-
-    .footer__upper-bloсk {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .footer__subscription {
-        height: 200px;
-        gap: 12px;
-    }
-
-    .footer__head {
-        width: 100%;
-    }
-
-    .footer__lower-bloсk {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        margin-top: 16px;
-        gap: 20px;
-    } 
 }
 
 /*iPadPro 12.9*/
 
 @media (min-width: 1024px) and (max-width: 1439px) {
 
-    .articles {
-        width: 960px;
-    }
-
-    .articles__article-card .article-card:nth-of-type(-n+2) {
-        width: 468px;
-    }
-
-    .articles__article-card .article-card:nth-of-type(n+3) {
-        width: 304px;
-        height: 458px;
-    }
-
     .articles-btn-position {
     margin-top: 35px;
     margin-bottom: 60px;
     }
-
-    .footer__nav {
-    width: 247px;
-    }
-
-    .footer__subscription {
-    width: 450px;
-    }
-
 }
 
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .articles {
-        width: 728px;
-    }
-
-    .articles__article-card .article-card:nth-of-type(-n+2) {
-        width: 728px;
-        height: 599px;
-    }
-
-    .articles__article-card .article-card:nth-of-type(n+3) {
-        width: 352px;
-        height: 466px;
-    }
-
     .articles-btn-position {
         margin-top: 36px;
         margin-bottom: 55px;
-    }
-
-
-    .footer__nav {
-        width: 247px;
-    }
-
-    .footer__upper-bloсk {
-        flex-wrap: wrap;
-        row-gap: 26px;
-        margin-top: 35px;
-        margin-bottom: 27px;
-    }
-
-    .footer__subscription {
-        width: 450px;
     }
 
 }
@@ -524,91 +278,21 @@ aside {
 
 @media (min-width: 414px) and (max-width: 767px) {
 
-    .articles {
-        width: 374px;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .head__header { 
-        margin-top: 32px;
-        margin-bottom: 24px;
-        font-size: 32px;
-        font-family: Montserrat-Bold;
-    }
-
-    .articles__article-card .article-card:nth-of-type(-n+4) {
-        width: 374px;
-        height: 466px;
-    }
-
-    .articles__article-card .article-card:nth-of-type(n+5) {
-        display: none;
-    }
-
     .articles-btn-position {
     margin-top: 28px;
     margin-bottom: 59px;
-    }
-
-    .footer__upper-bloсk {
-    row-gap: 26px;
-    margin-top: 35px;
-    margin-bottom: 27px;
-    }
-
-    .footer__subscription {
-    width: 375px;
-    }
-
-    .footer__form {
-    width: 375px;
     }
 
 }
 
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
-
-    .articles {
-        width: 288px;
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .head__header { 
-        margin-top: 24px;
-        margin-bottom: 24px;
-        font-size: 24px;
-        line-height: 32px;
-        font-family: Montserrat-Bold;
-    }
-
-    .articles__article-card .article-card:nth-of-type(-n+4) {
-        width: 288px;
-        height: 484px;
-    }
-
-    .articles__article-card .article-card:nth-of-type(n+5) {
-        display: none;
-    }
+    
 
     .articles-btn-position {
         margin-top: 28px;
         margin-bottom: 59px;
     }
 
-    .footer__upper-bloсk {
-        row-gap: 23px;
-        margin-top: 35px;
-        margin-bottom: 27px;
-    }
 
-    .footer__subscription {
-        width: 288px;
-    }
-
-    .footer__form {
-        width: 288px;
-    }
 }

@@ -1,0 +1,11 @@
+.breadcrumb--article {
+    margin-top: 16px;
+}
+
+/*iPhone 11 Pro Max */
+@media (min-width: 414px) and (max-width: 767px) {
+    .breadcrumb--article {
+        margin-top: 12px;
+    }
+
+}

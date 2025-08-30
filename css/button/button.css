@@ -1,3 +1,7 @@
+@import url(button--header.css);
+@import url(button--footer.css);
+
+
 .button {
     border: none;
     border-radius: 4px;

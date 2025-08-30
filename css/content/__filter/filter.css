@@ -1,0 +1,65 @@
+.content__filter {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.content__filter-input {
+    display: none;
+}
+
+.content__filter-label {
+    font-family: Montserrat-SemiBold;
+    padding: 6px 8px 6px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    border: 1px solid #C1C5CD;
+    border-radius: 24px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    text-wrap: nowrap;
+}
+
+.content__filter-input:checked + .content__filter-label {
+    outline: 2px solid #16C8BB;
+    outline-offset: -2px;
+}
+
+.content__filter-input:checked + .content__filter-label::before {
+   content: "";
+   background-image: url(../../../images/SVG/Type=Unicorn.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 20px;
+   height: 20px;
+}
+
+.content__filter-label:hover {
+    cursor: pointer;
+    outline: 2px solid #16C8BB;
+    outline-offset: -2px;
+}
+
+
+@media (max-width: 767px) {
+    
+    .content__filter {
+        width: 387px;
+        margin-top: 24px;
+        z-index: 99;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+    }
+
+
+}

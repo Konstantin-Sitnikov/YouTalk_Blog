@@ -1,0 +1,44 @@
+@import url(breadcrumb--blog.css);
+@import url(breadcrumb--article.css);
+
+
+.breadcrumb {
+    width: 100%;
+}
+
+.breadcrumb__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+.breadcrumb__item {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.breadcrumb__link {
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.breadcrumb__text {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.breadcrumb__list .breadcrumb__item:not(:nth-last-child(1))::after {
+    content: "  ";
+    background-image: url('../../images/SVG/Arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 16px;
+}

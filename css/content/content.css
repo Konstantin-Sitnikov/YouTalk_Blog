@@ -1,16 +1,28 @@
-.header__head {
+@import url(__header/header.css);
+@import url(__filter/filter.css);
+@import url(__articles/articles.css);
+
+.content {
     width: 1200px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;    
 }
+
+
+.content__blog {        
+    flex-direction: column;
+}
+
+.content__article {
+    justify-content: space-between;
+}
+
+
+
 
 /*iPadPro 12.9*/
 @media (min-width: 1024px) and (max-width: 1439px) {
 
-    .header__head {
+    .content {
         width: 960px;
     }    
 }
@@ -18,7 +30,7 @@
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
     
-    .header__head {
+    .content {
         width: 728px;
     }
 
@@ -26,14 +38,16 @@
 
 /*iPhone 11 Pro Max */
 @media (min-width: 414px) and (max-width: 767px) {
-    .header__head {
+    
+    .content {
         width: 374px;
     }
 }
 
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
-    .header__head {
+
+    .content {
         width: 288px;
     }
 }
