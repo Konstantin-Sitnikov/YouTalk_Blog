@@ -1,0 +1,24 @@
+.heading--article {
+    margin: 0;
+    margin-top: 54px;
+}
+
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .heading--article {
+        margin-top: 32px;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .heading--article {
+        margin-top: 32px;
+    }
+}

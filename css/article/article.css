@@ -1,23 +1,22 @@
+@import url(__header/header.css);
+@import url(__info/__info.css);
+@import url(__item/item.css);
+@import url(__content/content.css);
 
-
-.body {
-    width: 1440px;
+.article {
+    margin: 0;
     padding: 0;
-    margin: auto;    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    width: 690px;
 }
+
 
 
 /*iPadPro 12.9*/
 
 @media (min-width: 1024px) and (max-width: 1439px) {
 
-    .body {
-        width: 1024px;
+    .article {
+        width: 714px;
     }
     
 }
@@ -25,9 +24,10 @@
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .body {
-        width: 768px;
+    .article {
+        width: 728px;
     }
+
 }
 
 
@@ -35,8 +35,8 @@
 
 @media (min-width: 414px) and (max-width: 767px) {
 
-    .body {
-        width: 414px;
+    .article {
+        width: 374px;
     }
 
 }
@@ -44,7 +44,8 @@
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
 
-    .body {
-        width: 320px;
+    .article {
+        width: 288px;
     }
+
 }

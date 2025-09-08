@@ -7,6 +7,7 @@
 }
 
 .breadcrumb__list {
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,15 +21,18 @@
     display: flex;
     flex-direction: row;
     align-items: end;
+
 }
 
 .breadcrumb__link {
     color: black;
     text-decoration: none;
-    white-space: nowrap;
+
 }
 
 .breadcrumb__text {
+    width: 100%;
+    display: inline-block;
     font-family: Montserrat-Regular;
     font-size: 12px;
     line-height: 18px;
@@ -41,4 +45,20 @@
     background-repeat: no-repeat;
     height: 18px;
     width: 16px;
+}
+
+
+
+.breadcrumb__list .breadcrumb__item:nth-last-child(1) {
+    overflow: hidden;
+}
+
+.breadcrumb__list .breadcrumb__link:nth-last-child(1) {
+    overflow: hidden;
+}
+
+.breadcrumb__list .breadcrumb__text:nth-last-child(1) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

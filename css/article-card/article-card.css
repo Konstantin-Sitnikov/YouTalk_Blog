@@ -1,6 +1,6 @@
 @import url(__img/img.css);
 @import url(__tags/tags.css);
-@import url(__picture/picture.css);
+@import url(__info/info.css);
 
 
 .content__articles .article-card:nth-of-type(-n+2) {

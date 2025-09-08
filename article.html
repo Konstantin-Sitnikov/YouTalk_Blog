@@ -3,11 +3,27 @@
 <head lang=”ru”>
     <meta charset=”utf-8”>
     <link href="font.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/layout/main.css" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/header/header.css" type="text/css">
+    <link rel="stylesheet" href="css/footer/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/button/button.css" type="text/css">
+
+        <link rel="stylesheet" href="css/heading/heading.css" type="text/css">
+
+    <link rel="stylesheet" href="css/content/content.css" type="text/css">
+
+    <link rel="stylesheet" href="css/breadcrumb/breadcrumb.css" type="text/css">
+
+    <link rel="stylesheet" href="css/article/article.css" type="text/css">
+    
+    <link rel="stylesheet" href="css/aside/aside.css" type="text/css">
+
+
 </head>
 
 
-<body>
+<body class="body">
     <img class="bkgrd-img bkgrd-img-pos_1" src="images/PNG/background/Article_background_img_1.png" alt="Фоновое изображение 1">
     <img class="bkgrd-img bkgrd-img-pos_2" src="images/PNG/background/Article_background_img_2.png" alt="Фоновое изображение 2">
     <img class="bkgrd-img bkgrd-img-pos_3" src="images/PNG/background/Article_background_img_3.png" alt="Фоновое изображение 3">
@@ -15,7 +31,7 @@
 
     
     <header class="header">
-        <div class="header__blok">
+        <div class="header__body">
             <div class="header__logo">
                 <svg width="51" height="36" viewBox="0 0 51 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_4492_2245)">
@@ -37,7 +53,7 @@
 
             <nav class="header__nav">
                 <input type="checkbox" class="header__btn-menu" id="header__btn-menu" />
-                <label for="header__btn-menu" class="header__btn-menu_icon">
+                <label for="header__btn-menu" class="header__menu-icon">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11 14C11 13.4477 11.4477 13 12 13H28C28.5523 13 29 13.4477 29 14C29 14.5523 28.5523 15 28 15H12C11.4477 15 11 14.5523 11 14ZM11 20C11 19.4477 11.4477 19 12 19H28C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21H12C11.4477 21 11 20.5523 11 20ZM11 26C11 25.4477 11.4477 25 12 25H28C28.5523 25 29 25.4477 29 26C29 26.5523 28.5523 27 28 27H12C11.4477 27 11 26.5523 11 26Z" fill="#03B2A5"/>
                     </svg>
@@ -65,59 +81,48 @@
                     </li>
                     
                     <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
-                    <li class="header__item"><button type="button" class="header__button">Подобрать психолога</button></li>
+                    <li class="header__item header__item--hidden"><a href="#" class="header__link">Подобрать психолога</a></li>
                 </ul>
             </nav>
+
+            <button type="button" class="button button--header">Подобрать психолога</button>
+
         </div> 
 
     </header>
 
 
-    <main class="main-article">
+    <main class="content content--article">
+
+        <nav class="breadcrumb breadcrumb--article">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link"><span class="breadcrumb__text">Главная</span></a></li>
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link"><span class="breadcrumb__text">Блог</span></a></li>
+                <li class="breadcrumb__item"><a href="#" class="breadcrumb__link"><span class="breadcrumb__text">Как не утонуть в тревоге и управлять своими страхами</span></a></li>
+            </ul>
+        </nav>                           
                 
-        <section class="full-article">
-            <div class="full-article__head">                    
-                <nav class="full-article__nav-page">
-                    <ul class="nav-page__current-page">
-                        <li class="nav-page__item"><a href="#" class="nav-page__link">Главная</a></li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_4492_2226)">
-                                    <path d="M5.8125 12.6875L7.375 11.125L10.5 8L7.375 4.875L5.8125 3.3125" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_4492_2226">
-                                    <rect width="16" height="16" fill="white" transform="matrix(0 1 1 0 0 0)"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                        <li class="nav-page__item"><a href="#" class="nav-page__link">Блог</a></li>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_4492_2226)">
-                                    <path d="M5.8125 12.6875L7.375 11.125L10.5 8L7.375 4.875L5.8125 3.3125" stroke="#333333" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_4492_2226">
-                                    <rect width="16" height="16" fill="white" transform="matrix(0 1 1 0 0 0)"/>
-                                    </clipPath>
-                                    </defs>
-                                </svg>
-                        <li class="nav-page__item">Как не утонуть в тревоге и управлять своими страхами</li>
-                    </ul>
-                </nav>
+        
+        <section class="article">
+            
 
-                <h1 class="full-article__main-headline main-headline--font-size">Как не утонуть в тревоге и управлять своими страхами</h1>
+            <span class="heading heading--article">Как не утонуть в тревоге и управлять своими страхами</span>
 
-                <div class="full-article__article-author-date">Автор: Лиза Файнтух · 21.08.2021</div>
-            </div>
+            <ul class="article__info">
+                <li class="article__item article__item--info"><span class="article__info-text">Автор: Лиза Файнтух</span></li>
+                <li class="article__item article__item--info"><span class="article__info-text">21.08.2021</span></li>
+                <li class="article__item article__item--info"><a class="article__info-link" href="#"><span class="article__info-text">Self</span></a></li>
+            </ul>
 
 
-            <img class="full-article__img" src="images/PNG/Article/Article-image.png" alt="Главное фото">
+
+            <img class="article__img" src="images/PNG/Article/Article-image.png" alt="Главное фото">
 
      
-            <ul class="full-article__content-article">
-                <h5 class="full-article__content-heading">Содержание</h5>
-                <li class="full-article__content-item"><a class="full-article__content-link" href="#">Как понять, что отношения с мамой были дисфункциональными и  привели к травме?</a></li>
-                <li class="full-article__content-item"><a class="full-article__content-link" href="#">Мама привет!</a>
+            <ul class="article__content">
+                <span class="article__header article__header--content">Содержание</span>
+                <li class="article__item article__item--content"><a class="full-article__content-link" href="#">Как понять, что отношения с мамой были дисфункциональными и  привели к травме?</a></li>
+                <li class="article__item article__item--content"><a class="full-article__content-link" href="#">Мама привет!</a>
                         <ul class="full-article__sub-content-article">
                             <li class="full-article__sub-content-item"><a class="full-article__content-link" href="#">Под под заголовок под заголовком</a>
                                 <ul class="full-article__sub-content-article"> 
@@ -127,8 +132,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="full-article__content-item"><a class="full-article__content-link" href="#">Ну вот опять заголовок который как «привет мама»</a></li>
-                    <li class="full-article__content-item"><a class="full-article__content-link" href="#">Как понять, что вы страдаете от материнской травмы?</a></li>
+                    <li class="article__item article__item--content"><a class="full-article__content-link" href="#">Ну вот опять заголовок который как «привет мама»</a></li>
+                    <li class="article__item article__item--content"><a class="full-article__content-link" href="#">Как понять, что вы страдаете от материнской травмы?</a></li>
                     
             </ul>
 
@@ -149,7 +154,7 @@
             
        </section>
 
-       <aside>
+       <aside class="aside">
             <div class="make-an-appointment">
                 <img src="images/PNG/Article/make-an-appointment.png" alt="">
                 <button class="articles_button" type="button">Ёще</button>
@@ -162,42 +167,42 @@
 
     </main>
 
-    <footer class="footer">
-        <div class="footer__main-block">
-            <div class="footer__upper-bloсk">                
+       <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__nav-sub-soc">                
                 <nav class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">О нас</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Тарифы</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Для бизнеса</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Психологам</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>                
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Тарифы</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Для бизнеса</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Психологам</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">FAQ</a></li>                
                     </ul>
 
 
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Блог</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Вебинары</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Подкаст</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Сертификат</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Блог</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Вебинары</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Подкаст</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Сертификат</a></li>
+                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
                     </ul>
 
                 </nav>
 
                 <div class="footer__subscription">
-                    <h1 class="footer__head">Одно письмо в неделю со свежими новостями и акциями</h1>
-                    <form class="footer__email" action="#">
+                    <h4 class="footer__sub-head">Одно письмо в неделю со свежими новостями и акциями</h4>
+                    <form class="footer__sub-email" action="#">
                     
-                            <input class="footer__form" type="email" name="mail" placeholder="Ваш e-mail" required>
-                            <button class="footer__button" type="submit">
+                            <input class="footer__sub-form" type="email" name="mail" placeholder="Ваш e-mail" required>
+                            <button class="button button--footer" type="submit">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M3.5 13.0001H9.5V11.0001H3.5V1.84611C3.50001 1.75922 3.52267 1.67384 3.56573 1.59838C3.6088 1.52291 3.67078 1.45997 3.74558 1.41576C3.82037 1.37155 3.9054 1.34759 3.99227 1.34625C4.07915 1.34491 4.16487 1.36623 4.241 1.40811L22.703 11.5621C22.7814 11.6053 22.8468 11.6687 22.8923 11.7457C22.9378 11.8228 22.9618 11.9106 22.9618 12.0001C22.9618 12.0896 22.9378 12.1774 22.8923 12.2545C22.8468 12.3315 22.7814 12.3949 22.703 12.4381L4.241 22.5921C4.16487 22.634 4.07915 22.6553 3.99227 22.654C3.9054 22.6526 3.82037 22.6287 3.74558 22.5844C3.67078 22.5402 3.6088 22.4773 3.56573 22.4018C3.52267 22.3264 3.50001 22.241 3.5 22.1541V13.0001Z" fill="white"/>
                                 </svg>
                                 </button>
                     
                     </form>
-                    <p class="footer__text">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
+                    <p class="footer__sub-text">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
                         с ФЗ РФ № 152-ФЗ «О персональных данных»,
                         а также с Политикой конфиденциальности</p>
 
@@ -231,7 +236,7 @@
                         </svg>
 
                     <div class="footer__networks">
-                        <a class="footer__networks_link" href="#">
+                        <a class="footer__net-link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2039)">
                             <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
@@ -250,7 +255,7 @@
                             </svg>
                         </a>
 
-                        <a class="footer__networks_link" href="#">
+                        <a class="footer__net-link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2043)">
                             <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
@@ -269,7 +274,7 @@
                             </svg>
                         </a>
 
-                        <a class="footer__networks_link" href="#">
+                        <a class="footer__net-link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2047)">
                             <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
@@ -289,7 +294,7 @@
 
                         </a>
 
-                        <a class="footer__networks_link" href="#">
+                        <a class="footer__net-link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2052)">
                             <path d="M0 16C0 7.16343 7.16343 0 16 0C24.8366 0 32 7.16343 32 16C32 24.8366 24.8366 32 16 32C7.16343 32 0 24.8366 0 16Z" fill="#333333"/>
@@ -304,14 +309,7 @@
 
 
                         </a>
-
-
-
                     </div>
-
-
-
-
                 </div>  
             </div>
 
@@ -320,17 +318,11 @@
 
 
             <div class="footer__lower-bloсk">
-                <p class="footer__lower_text">©Youtalk, 2018 – 2022</p>
-                <a class="footer__lower_link" href="#"><p class="footer__lower_text">Юридические документы</p></a>
-                <a class="footer__lower_link" href="#"><p class="footer__lower_text">Способы оплаты</p></a>
-
-
-
-
+                <p class="footer__lower-text">©Youtalk, 2018 – 2022</p>
+                <a class="footer__lower-link" href="#"><p class="footer__lower-text">Юридические документы</p></a>
+                <a class="footer__lower-link" href="#"><p class="footer__lower-text">Способы оплаты</p></a>
             </div>
         </div>
-
-
     </footer>
 
 

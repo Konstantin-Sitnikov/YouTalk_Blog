@@ -1,0 +1,6 @@
+@import url(header--main-heading.css);
+@import url(header--content.css);
+
+.article__header {
+    font-family: Montserrat-Bold;
+}

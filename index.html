@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/header/header.css" type="text/css">
     <link rel="stylesheet" href="css/footer/footer.css" type="text/css">
     <link rel="stylesheet" href="css/button/button.css" type="text/css">
-
+    <link rel="stylesheet" href="css/heading/heading.css" type="text/css">
     <link rel="stylesheet" href="css/content/content.css" type="text/css">
 
     <link rel="stylesheet" href="css/breadcrumb/breadcrumb.css" type="text/css">
 
     <link rel="stylesheet" href="css/article-card/article-card.css" type="text/css">
+
+
 
 
 
@@ -96,7 +98,7 @@
             </ul>
         </nav>
 
-        <h1 class="content__header">Блог</h1>
+        <span class="heading heading--index">Блог</span>
 
         <div class="content__filter">
             <input type="checkbox" class="content__filter-input" id="filter-input-1"/>
@@ -115,7 +117,7 @@
             </label>
 
             <input type="checkbox" class="content__filter-input" id="filter-input-2"/>
-            <label for="filter-input-2" class="content__filter-label"> Самооценка и самопринятие</label>
+            <label for="filter-input-2" class="content__filter-label">Самооценка и самопринятие</label>
 
             <input type="checkbox" class="content__filter-input" id="filter-input-3"/>
             <label for="filter-input-3" class="content__filter-label">Self</label>
@@ -146,31 +148,19 @@
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
                     <div class="article-card__article">                  
-                        <div class="article-card__picture">
 
-                            <ul class="article-card__tags">
-                                <li class="article-card__tag">Самооценка и самопринятие</li>
-                                <li class="article-card__tag">Self</li>
-                            </ul> 
-                                                
-                            <img class="article-card__img" src="images/PNG/article_1/article_1(588px).png" alt="Фото">
-                           
-                        </div>
-                        
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Самооценка и самопринятие</span></li>
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                                            
+                        <img class="article-card__img" src="images/PNG/article_img/article_1(588px).png" alt="Фото">
+                                               
                         <div class="article-card__info">
-
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h1>
-                                    <p class="article-card__author">Автор: Лиза Файнтух</p>
-                                </div>
-                                <p class="article-card__preview">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-                                                                
-                            </div>
-
-                            <p class="article-card__date">21.08.2021</p>                        
-
+                            <span class="article-card__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+                            <span class="article-card__author">Автор: Лиза Файнтух</span>
+                            <span class="article-card__preview">Изначально термин «эмоциональное профессиональной сфере и относился...</span>
+                            <span class="article-card__date">21.08.2021</span>                          
                         </div>
                     </div>                          
                 </a>
@@ -180,29 +170,19 @@
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
                     <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <span class="article-card__tag">Самооценка и самопринятие</span>
-                                <span class="article-card__tag">Self</span>
-                            </div>
-                               
-                            <img class="article-card__img" src="images/PNG/article_2/article_2(588px).png" alt="Фото">
 
-                        </div>
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_2(588px).png" alt="Фото">
                     
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Как не утонуть в тревоге и управлять своими страхами</h1>
-                                    <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
-                                </div>
-                                <p class="article-card__preview">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">21.08.2021</p>                        
+                            <span class="article-card__header">Как не утонуть в тревоге и управлять своими страхами</span>
+                            <span class="article-card__author">Автор: Екатерина Бельтюкова</span>
+                            <span class="article-card__preview">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
+                            <span class="article-card__date">21.08.2021</span>    
 
                         </div>
                     </div>                          
@@ -212,30 +192,21 @@
             <!-- Статья 3 -->
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
-                    <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <p class="article-card__tag">Self</p>
-                            </div>
-                            
-                            <img class="article-card__img" src="images/PNG/article_3/article_3(304px).png" alt="Фото">
+                    <div class="article-card__article">
 
-                        </div>
-                    
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_3(304px).png" alt="Фото">
+
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h1>
-                                    <p class="article-card__author">Автор: Лиза Файнтух</p>
-                                </div>
-                                <p class="article-card__preview">Изначально термин «эмоциональное сфере и относился...</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">21.08.2021</p>                        
-
+                            <span class="article-card__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+                            <span class="article-card__author">Автор: Лиза Файнтух</span>
+                            <span class="article-card__preview">Изначально термин «эмоциональное сфере и относился...</span>
+                            <span class="article-card__date">21.08.2021</span>
+                            
                         </div>
                     </div>                          
                 </a>
@@ -244,31 +215,22 @@
             <!-- Статья 4 -->
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
-                    <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <p class="article-card__tag">Self</p>
-                            </div>
-                            
-                            <img class="article-card__img" src="images/PNG/article_4/article_4(304px).png" alt="Фото">
-                    
-                        </div>
-                    
+                    <div class="article-card__article">
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_4(304px).png" alt="Фото">
+
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Как не утонуть в тревоге и управлять своими страхами</h1>
-                                    <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
-                                </div>
-                                <p class="article-card__preview">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">11.08.2021</p>                        
-
+                            <span class="article-card__header">Как не утонуть в тревоге и управлять своими страхами</span>
+                            <span class="article-card__author">Автор: Екатерина Бельтюкова</span>
+                            <span class="article-card__preview">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
+                            <span class="article-card__date">11.08.2021</span>
+                            
                         </div>
+                                        
                     </div>                          
                 </a>
             </div>
@@ -276,31 +238,23 @@
             <!-- Статья 5 -->
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
-                    <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <p class="article-card__tag">Self</p>
-                            </div>
-                            
-                            <img class="article-card__img" src="images/PNG/article_5/article_5(304px).png" alt="Фото">
+                    <div class="article-card__article">
 
-                        </div>
-                    
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_5(304px).png" alt="Фото">
+
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Как управлять своими эмоциями: 8 шагов</h1>
-                                    <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
-                                </div>
-                                <p class="article-card__preview">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">07.08.2021</p>                        
-
+                            <span class="article-card__header">Как управлять своими эмоциями: 8 шагов</span>
+                            <span class="article-card__author">Автор: Екатерина Бельтюкова</span>
+                            <span class="article-card__preview">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</span>
+                            <span class="article-card__date">07.08.2021</span>
+                            
                         </div>
+                                              
                     </div>                          
                 </a>
             </div>
@@ -308,31 +262,23 @@
             <!-- Статья 6 -->
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
-                    <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <p class="article-card__tag">Self</p>
-                            </div>
-                            
-                            <img class="article-card__img" src="images/PNG/article_6/article_6(304px).png" alt="Фото">
-                            
-                        </div>
-                    
+                    <div class="article-card__article">
+
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_6(304px).png" alt="Фото">
+
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h1>
-                                    <p class="article-card__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</p>
-                                </div>
-                                <p class="article-card__preview">Изначально термин «эмоциональное я...</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">21.08.2021</p>                        
-
+                            <span class="article-card__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+                            <span class="article-card__author">Автор: Лиза Файнтух под редакцией Екатерины Бельтюковой</span>
+                            <span class="article-card__preview">Изначально термин «эмоциональное я...</span>
+                            <span class="article-card__date">21.08.2021</span>
+                            
                         </div>
+                                         
                     </div>                          
                 </a>
             </div>
@@ -340,31 +286,23 @@
             <!-- Статья 7 -->
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
-                    <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <p class="article-card__tag">Self</p>
-                            </div>
-                           
-                            <img class="article-card__img" src="images/PNG/article_7/article_7(304px).png" alt="Фото">
-                           
-                        </div>
-                    
+                    <div class="article-card__article">
+
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_7(304px).png" alt="Фото">
+
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Как не утонуть в тревоге и управлять своими страхами</h1>
-                                    <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
-                                </div>
-                                <p class="article-card__preview">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">11.08.2021</p>                        
-
+                            <span class="article-card__header">Как не утонуть в тревоге и управлять своими страхами</span>
+                            <span class="article-card__author">Автор: Екатерина Бельтюкова</span>
+                            <span class="article-card__preview">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</span>
+                            <span class="article-card__date">11.08.2021</span>
+                            
                         </div>
+                        
                     </div>                          
                 </a>
             </div>
@@ -372,38 +310,30 @@
             <!-- Статья 8 -->
             <div class="article-card">
                 <a class="article-card__link" href="Article.html">
-                    <div class="article-card__article">                  
-                        <div class="article-card__picture"> 
-                            <div class="article-card__tags">
-                                <p class="article-card__tag">Self</p>
-                            </div>
-                            
-                            <img class="article-card__img" src="images/PNG/article_8/article_8(304px).png" alt="Фото">
-                        </div>
-                    
+                    <div class="article-card__article">
+
+                        <ul class="article-card__tags">
+                            <li class="article-card__tag"><span class="article-card__tag-text">Self</span></li>
+                        </ul> 
+                        
+                        <img class="article-card__img" src="images/PNG/article_img/article_8(304px).png" alt="Фото">
+
                         <div class="article-card__info">
 
-                            <div class="article-card__text">
-
-                                <div class="article-card__header">
-                                    <h1 class="article-card__head">Как управлять своими эмоциями: 8 шагов</h1>
-                                    <p class="article-card__author">Автор: Екатерина Бельтюкова</p>
-                                </div>
-                                <p class="article-card__preview">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
-                                                            
-                            </div>
-
-                            <p class="article-card__date">11.08.2021</p>                        
-
+                            <span class="article-card__header">Как управлять своими эмоциями: 8 шагов</span>
+                            <span class="article-card__author">Автор: Екатерина Бельтюкова</span>
+                            <span class="article-card__preview">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</span>
+                            <span class="article-card__date">11.08.2021</span>
+                            
                         </div>
+
                     </div>                          
                 </a>
             </div>
             
             
-            <button class="button articles-btn-position articles-btn-size" type="button">Ёще</button>
+            <button class="button button--content__articles" type="button">Ёще</button>
 
-     
        </section>
     </main>
 

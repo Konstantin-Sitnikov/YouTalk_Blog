@@ -1,0 +1,52 @@
+.button--content__articles {
+    width: 182px;
+    height: 48px;
+    margin-top: 56px;
+    margin-bottom: 96px;    
+    background-color: #16C8BB;
+    color: #FFFFFF;
+
+}
+
+/*iPadPro 12.9*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .button--content__articles {
+        margin-top: 35px;
+        margin-bottom: 60px;    
+    }
+    
+}
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .button--content__articles {
+        margin-top: 33px;
+        margin-bottom: 55px;    
+    }
+    
+}
+
+
+/*iPhone 11 Pro Max*/
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .button--content__articles {
+        margin-top: 28px;
+        margin-bottom: 59px;    
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .button--content__articles {
+        margin-top: 28px;
+        margin-bottom: 59px;    
+    }
+
+}

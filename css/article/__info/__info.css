@@ -1,0 +1,38 @@
+.article__info {
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
+.article__info-link {
+    text-decoration: none;
+}
+
+.article__info-text {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+    /*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .article__info {
+        margin-top: 8px;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .article__info {
+        margin-top: 8px;
+    }
+}

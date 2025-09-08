@@ -48,65 +48,8 @@
 
 
 
-.article-card__info {
-    flex-grow: 1;
-    border: 1px solid #DEDEDE;
-    box-sizing: border-box;
-    border-radius: 0px 0px 16px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.article-card__text {
-    margin-left: 16px;
-    margin-right: 14px;
-    margin-top: 14px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 8px;
-}
 
-.article-card__header {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.article-card__head {
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    font-family: Montserrat-Bold;
-    line-height: 26px;
-}
-
-.article-card__author {
-    padding: 0;
-    margin: 0;
-    font-size: 12px;
-    font-family: Montserrat-Regular;
-    line-height: 18px;    
-}
-
-.article-card__preview {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    font-family: Montserrat-Regular;
-    line-height: 20px;
-    
-}
-
-.article-card__date {
-    margin-left: 16px;
-    margin-bottom: 16px;
-    font-size: 12px;
-    font-family: Montserrat-Regular;
-}
 
 /*
 .button {
@@ -119,20 +62,7 @@
 }
     */
 
-.articles-btn-position {
-    margin-top: 56px;
-    margin-bottom: 96px;
-}
 
-.articles-btn-size {
-    width: 182px;
-    height: 48px;
-}
-
-.button:hover {
-    cursor: pointer;
-    transform: scale(1.02);
-}
 
 /*Страница статьи*/
 
@@ -166,10 +96,6 @@
     line-height: 24px;  
 }*/
 
-.full-article__main-headline { 
-    margin-top: 54px;
-    margin-bottom: 16px;
-}
 
 
 .full-article__article-author-date {
@@ -219,10 +145,7 @@
 
 
 
-aside {
-    width: 282px;
-    display: flex;
-}
+
 
 .make-an-appointment {
     width: 100%;

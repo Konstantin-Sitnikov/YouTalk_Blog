@@ -1,6 +1,7 @@
 @import url(__header/header.css);
 @import url(__filter/filter.css);
 @import url(__articles/articles.css);
+@import url(content--article.css);
 
 .content {
     width: 1200px;
@@ -11,12 +12,6 @@
 .content__blog {        
     flex-direction: column;
 }
-
-.content__article {
-    justify-content: space-between;
-}
-
-
 
 
 /*iPadPro 12.9*/

@@ -1,0 +1,36 @@
+.article__content {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    width: 588px;
+}
+
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .article__content {
+        margin-top: 12px;
+        width: 728px;
+    }
+}
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .article__content {
+        width: 374px;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .article__content {
+        margin-top: 16px;
+        width: 288px;
+    }
+}

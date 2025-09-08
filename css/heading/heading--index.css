@@ -1,0 +1,32 @@
+.heading--index {
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+
+/*iPadPro 12.9, iPad mini*/
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    .heading--index {
+        margin-top: 40px;
+    }
+ 
+}
+
+
+/*iPhone 11 Pro Max */
+@media (min-width: 414px) and (max-width: 767px) {
+    
+    .heading--index {
+        margin-top: 32px;
+    }
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+    
+    .heading--index {
+        margin-top: 24px;
+    }
+}

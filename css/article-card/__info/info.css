@@ -1,0 +1,40 @@
+.article-card__info {
+    flex-grow: 1;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 0px 0px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.article-card__header {
+    font-size: 18px;
+    font-family: Montserrat-Bold;
+    line-height: 26px;
+}
+
+.article-card__author {
+    margin-top: 4px;
+    font-size: 12px;
+    font-family: Montserrat-Regular;
+    line-height: 18px;    
+}
+
+.article-card__preview {
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    line-height: 20px;
+    
+}
+
+.article-card__date {
+    margin-top: auto;
+    font-size: 12px;
+    font-family: Montserrat-Regular;
+    line-height: 18px;
+}
