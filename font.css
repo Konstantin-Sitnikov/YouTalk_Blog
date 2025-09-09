@@ -20,8 +20,15 @@
 
 
 
-    @font-face {
+@font-face {
         font-family: "Montserrat-Medium";
         src: local("Montserrat"),
                 url("fonts/Montserrat-Medium.woff") format("woff");
-    }
+}
+
+@font-face {
+        font-family: "Montserrat-Italic";
+        src: local("Montserrat"),
+                url("fonts/Montserrat-Italic.woff") format("woff");
+}
+

@@ -1,8 +1,10 @@
 @import url(__header/header.css);
 @import url(__info/__info.css);
 @import url(__item/item.css);
-@import url(__content/content.css);
 @import url(__text/text.css);
+@import url(__topic/topic.css);
+@import url(__quote/quote.css);
+@import url(__list/list.css);
 
 .article {
     margin: 0;

@@ -8,7 +8,7 @@
     content: "·";
     }
 
-.article__content .article__item::before {
+.article__list .article__item::before {
     content: "";
     background-image: url(../../../images/SVG/marker.svg);
     background-position: center;
