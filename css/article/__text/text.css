@@ -1,0 +1,13 @@
+.article__text {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.article__text--info {
+    font-family: Montserrat-Regular;
+    font-size: 12px;
+    line-height: 18px;
+}

@@ -2,6 +2,7 @@
 @import url(__info/__info.css);
 @import url(__item/item.css);
 @import url(__content/content.css);
+@import url(__text/text.css);
 
 .article {
     margin: 0;

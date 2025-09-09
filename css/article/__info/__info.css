@@ -13,13 +13,7 @@
     text-decoration: none;
 }
 
-.article__info-text {
-    font-family: Montserrat-Regular;
-    font-size: 12px;
-    line-height: 18px;
-}
-
-    /*iPhone 11 Pro Max */
+/*iPhone 11 Pro Max */
 
 @media (min-width: 414px) and (max-width: 767px) {
 

@@ -1,26 +1,14 @@
 .article__item {
     list-style: none;
-}
-
-
-.article__item--info {
     display: flex;
     gap: 8px;
 }
 
-
-.article__info .article__item--info:not(:nth-last-child(1))::after {
+.article__info .article__item:not(:nth-last-child(1))::after {
     content: "·";
     }
 
-
-
-.article__item--content {
-    display: flex;
-    gap: 8px;
-}
-
-.article__content .article__item--content::before {
+.article__content .article__item::before {
     content: "";
     background-image: url(../../../images/SVG/marker.svg);
     background-position: center;
