@@ -1,12 +1,28 @@
 @import url(__header/header.css);
 @import url(__info/__info.css);
 @import url(__item/item.css);
+
+
 @import url(__text/text.css);
-@import url(__topic/topic.css);
-@import url(__quote/quote.css);
+@import url(__text/text--advice.css);
+@import url(__text/text--quote.css);
+
+
 @import url(__list/list.css);
 @import url(__body/body.css);
 @import url(__advice/advice.css);
+
+
+@import url(__blok/blok.css);
+@import url(__blok/blok--advice.css);
+@import url(__blok/blok--quote.css);
+@import url(__blok/blok--topic.css);
+@import url(__blok/blok--img-text-big.css);
+
+
+
+
+
 
 .article {
     margin: 0;

@@ -1,16 +1,11 @@
-.article__advice {
+.article__blok--advice {
     box-sizing: border-box;
     width: 100%;
-    height: 168px;
-    padding-top: 24px;
-    padding-left: 104px;
-    padding-right: 104px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
 
     background-image: url(../../../images/PNG/background/Article_background_img_3.png);
     background-repeat: no-repeat;
     background-size: 240px 168px;
     background-position: top center;
 }
+
+

@@ -1,6 +1,5 @@
-.article__quote {
+.article__blok--quote {
     margin-top: 40px;
-    width: 100%;
     padding: 34px 24px 24px;
 
     background-color: #F3F7FE;
@@ -10,6 +9,8 @@
     flex-direction: column;
     align-items: start;
     gap: 8px;
+
+
     background-image: url(../../../images/PNG/background/background_quote.png);
     background-size: 55.78px 36px;
     background-position: 24px 24px;
@@ -22,7 +23,7 @@
 
 @media (min-width: 768px) and (max-width: 1439px) {
 
-.article__quote {
+.article__blok--quote {
 
     margin-top: 24px;
     padding: 24px;
@@ -36,7 +37,7 @@
 
 @media (min-width: 414px) and (max-width: 767px) {
 
-    .article__quote {
+    .article__blok--quote {
 
         margin-top: 24px;
         padding: 16px;
@@ -49,7 +50,7 @@
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
 
-    .article__quote {
+    .article__blok--quote {
 
         margin-top: 40px;
         padding: 16px;
