@@ -10,42 +10,29 @@
 }
 
 
+.article__list--body {
+    margin: 0;
+}
 
-.article__list--content {
 
-    width: 588px;
+.article__list--links {
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 8px;
 }
 
-
-@media  (max-width: 1023px) {
-
-    .article__list--content  {
-        width: 100%;
+.article__list--small-marker .article__item:not(:nth-last-child(1))::after {
+    content: "·";
     }
-}
 
 
-/*iPad mini*/
-@media (min-width: 768px) and (max-width: 1023px) {
-
-    .article__list--content  {
-        margin-top: 12px;
-    }
-}
-
-
-
-/*iPhone SE */
-@media (min-width: 0px) and (max-width: 413px) {
-
-    .article__list--content  {
-        margin-top: 16px;
-
-    }
-}
-
-
-.article__list--body {
-    margin: 0;
+.article__list--green-marker .article__item::before {
+    content: "";
+    background-image: url(../../../images/SVG/marker.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
 }

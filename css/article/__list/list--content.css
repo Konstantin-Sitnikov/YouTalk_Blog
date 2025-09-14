@@ -1,0 +1,32 @@
+.article__list--content {
+    width: 588px;
+    gap: 8px;
+}
+
+
+@media  (max-width: 1023px) {
+
+    .article__list--content  {
+        width: 100%;
+    }
+}
+
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .article__list--content  {
+        margin-top: 12px;
+    }
+}
+
+
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .article__list--content  {
+        margin-top: 16px;
+
+    }
+}

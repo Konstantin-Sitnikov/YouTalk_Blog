@@ -1,6 +1,6 @@
 .article__blok--advice {
-    box-sizing: border-box;
     width: 100%;
+    padding: 24px 104px 48px 102px;
 
     background-image: url(../../../images/PNG/background/Article_background_img_3.png);
     background-repeat: no-repeat;
@@ -9,3 +9,49 @@
 }
 
 
+/*iPadPro 12.9*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .article__blok--advice {
+
+        padding: 24px 127px 48px 102px;
+
+    }
+    
+}
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .article__blok--advice {
+
+        padding: 24px 141px 48px 102px;
+
+    }
+    
+}
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .article__blok--advice {
+
+        padding: 24px 0px 0px 0px;
+
+    }
+    
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .article__blok--advice {
+
+        padding: 8px 0px 0px 0px;
+
+    }
+    
+}

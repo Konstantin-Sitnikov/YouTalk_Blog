@@ -5,6 +5,7 @@
     font-family: Montserrat-Medium;
     font-size: 16px;
     line-height: 24px;
+
 }
 
 .article__text--info {
@@ -12,3 +13,26 @@
     font-size: 12px;
     line-height: 18px;
 }
+
+
+.article__text--links {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    text-wrap: nowrap;
+}
+
+.article__text--advice {
+
+    text-align: center;
+    font-family: Montserrat-Italic;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.article__text--quote {
+    font-family: Montserrat-Italic;
+    font-size: 16px;
+    line-height: 24px;
+}
+

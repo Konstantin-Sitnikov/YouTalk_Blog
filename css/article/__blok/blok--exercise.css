@@ -1,0 +1,39 @@
+.article__blok--exercise {
+    box-sizing: border-box;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 16px;
+    border-style: none;
+}
+
+
+
+.article__blok--exercise-color-1 {
+    background-color: #FEFAEC;
+}
+
+.article__blok--exercise-color-2 {
+    background-color: #FFF3EB;
+}
+
+.article__blok--exercise-color-3 {
+    background-color: rgba(3, 178, 165, 0.1);;
+
+}
+
+
+
+
+/*iPhone 11 Pro Max, iPhone SE */
+
+@media (min-width: 0px) and (max-width: 767px) {
+    
+    .article__blok--exercise {
+        padding: 16px;
+     }
+
+}
+
+

@@ -4,15 +4,3 @@
     gap: 8px;
 }
 
-.article__info .article__item:not(:nth-last-child(1))::after {
-    content: "·";
-    }
-
-.article__list .article__item::before {
-    content: "";
-    background-image: url(../../../images/SVG/marker.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-}
