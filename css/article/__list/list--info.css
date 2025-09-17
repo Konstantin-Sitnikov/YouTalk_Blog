@@ -4,6 +4,7 @@
     margin-top: 16px;
     flex-direction: row;
     gap: 8px;
+    margin-bottom: 24px;
 }
 
 
@@ -17,6 +18,7 @@
 
     .article__info {
         margin-top: 8px;
+        margin-bottom: 16px;
     }
 
 }
@@ -26,6 +28,7 @@
 
     .article__info {
         margin-top: 8px;
+        margin-bottom: 16px;
     }
 }
 

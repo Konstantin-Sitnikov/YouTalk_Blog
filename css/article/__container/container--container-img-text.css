@@ -1,4 +1,4 @@
-.article__blok--container-img-text {
+.article__container--container-img-text {
     width: 100%;
 
     display: flex;
@@ -15,7 +15,7 @@
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
     
-    .article__blok--container-img-text {
+    .article__container--container-img-text {
 
         gap: 16px;
 
@@ -27,7 +27,7 @@
 
 @media (min-width: 414px) and (max-width: 767px) {
 
-    .article__blok--container-img-text {
+    .article__container--container-img-text {
         
         flex-direction: column;
         gap: 24px;
@@ -39,7 +39,7 @@
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
     
-    .article__blok--container-img-text {
+    .article__container--container-img-text {
 
         flex-direction: column;
         gap: 16px;

@@ -1,6 +1,5 @@
-.article__blok--img-text-horizontal {
+.article__container--img-text-horizontal {
 
-    display: flex;
     flex-direction: row;
     gap: 24px;
 
@@ -10,7 +9,7 @@
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .article__blok--img-text-horizontal {
+    .article__container--img-text-horizontal {
         gap: 16px;
     }
 }
@@ -20,9 +19,8 @@
 
 @media (min-width: 0px) and (max-width: 767px) {
 
-    .article__blok--img-text-horizontal {
+    .article__container--img-text-horizontal {
 
-        display: flex;
         flex-direction: column;
         gap: 16px;
 

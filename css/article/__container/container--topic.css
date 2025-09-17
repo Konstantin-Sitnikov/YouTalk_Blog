@@ -1,4 +1,4 @@
-.article__blok--topic {
+.article__container--topic {
     margin-top: 24px;
     width: 100%;
     display: flex;
@@ -11,7 +11,7 @@
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .article__blok--topic {
+    .article__container--topic {
         margin-top: 36px;
     }
 
@@ -21,7 +21,7 @@
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
 
-    .article__blok--topic {
+    .article__container--topic {
         margin-top: 16px;
         gap: 8px;
     }

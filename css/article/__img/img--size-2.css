@@ -1,0 +1,29 @@
+.article__img--size-2 {
+    object-fit: contain;
+    width: 282px;
+    height: 380px;
+}
+
+
+
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .article__img--size-2 {
+        width: 294px;
+    }
+
+
+}
+
+
+/*iPhone 11 Pro Max, iPhone SE */
+
+@media (min-width: 0px) and (max-width: 767px) {
+
+    .article__img--size-2 {
+        width: 100%;
+    }
+
+}

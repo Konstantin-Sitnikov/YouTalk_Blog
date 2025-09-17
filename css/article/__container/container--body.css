@@ -1,0 +1,15 @@
+.article__container--body {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .article__container--body {
+        margin-top: 16px;
+        gap: 16px;
+    }
+}

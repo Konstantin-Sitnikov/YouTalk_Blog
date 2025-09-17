@@ -36,3 +36,12 @@
     line-height: 24px;
 }
 
+
+.article__text--img-caption {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 130%;
+    color: #868686;
+}
+
+

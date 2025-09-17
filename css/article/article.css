@@ -1,5 +1,5 @@
 @import url(__header/header.css);
-@import url(__info/__info.css);
+
 @import url(__item/item.css);
 
 
@@ -10,20 +10,21 @@
 @import url(__list/list--info.css);
 
 
-@import url(__body/body.css);
-@import url(__advice/advice.css);
+@import url(__container/container.css);
+@import url(__container/container--body.css);
+@import url(__container/container--advice.css);
+@import url(__container/container--quote.css);
+@import url(__container/container--topic.css);
+@import url(__container/article__container--img-caption.css);
+@import url(__container/container--img-text-horizontal.css);
+@import url(__container/container--img-text-vertical.css);
+@import url(__container/container--container-img-text.css);
+@import url(__container/container--exercise.css);
 
 
-@import url(__blok/blok.css);
-@import url(__blok/blok--advice.css);
-@import url(__blok/blok--quote.css);
-@import url(__blok/blok--topic.css);
-@import url(__blok/blok--img-text-horizontal.css);
-@import url(__blok/blok--img-text-vertical.css);
-@import url(__blok/blok--container-img-text.css);
-@import url(__blok/blok--exercise.css);
-
-
+@import url(__img/img.css);
+@import url(__img/img--size-1.css);
+@import url(__img/img--size-2.css);
 
 
 
