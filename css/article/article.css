@@ -15,7 +15,7 @@
 @import url(__container/container--advice.css);
 @import url(__container/container--quote.css);
 @import url(__container/container--topic.css);
-@import url(__container/article__container--img-caption.css);
+@import url(__container/container--img-caption.css);
 @import url(__container/container--img-text-horizontal.css);
 @import url(__container/container--img-text-vertical.css);
 @import url(__container/container--container-img-text.css);
@@ -25,6 +25,8 @@
 @import url(__img/img.css);
 @import url(__img/img--size-1.css);
 @import url(__img/img--size-2.css);
+@import url(__img/img--size-3.css);
+@import url(__img/img--size-4.css);
 
 
 
