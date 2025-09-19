@@ -1,0 +1,74 @@
+.appointment {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #E6F0FD;
+    border-radius: 16px;
+
+}
+
+.appointment__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment__container--body {
+    margin: 24px;
+    gap: 24px;
+}
+
+
+
+.appointment__container--text {
+    gap: 8px;
+}
+
+
+
+.appointment__header {
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+    line-height: 24px;    
+}
+
+
+
+.appointment__text {
+
+    text-align: center;
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+
+/*iPadPro 12.9*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .appointment__container--body {
+        margin: 24px 20px 24px;
+    }
+    
+}
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+   
+    .appointment__container--body {
+        margin: 22.55px 30.46px 14.45px;
+    }
+}
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .appointment__container--body {
+        margin: 24px 32px 44px;
+    }
+
+}
+

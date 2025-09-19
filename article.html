@@ -16,8 +16,16 @@
     <link rel="stylesheet" href="css/breadcrumb/breadcrumb.css" type="text/css">
 
     <link rel="stylesheet" href="css/article/article.css" type="text/css">
+
+    <link rel="stylesheet" href="css/selection-specialist/selection-specialist.css" type="text/css">
     
     <link rel="stylesheet" href="css/aside/aside.css" type="text/css">
+    
+    <link rel="stylesheet" href="css/appointment/appointment.css" type="text/css">
+
+    <link rel="stylesheet" href="css/psycholog-card/psycholog-card.css" type="text/css">
+
+
 
 
 </head>
@@ -112,15 +120,8 @@
                 <li class="article__item"><a class="article__info-link" href="#"><span class="article__text article__text--info">Self</span></a></li>
             </ul>
 
-
-
             <img class="article__img article__img--size-1" src="images/PNG/Article/large_1.png" alt="Главное фото">
-
-            
-
-            
-
-     
+         
             <ul class="article__list article__list--content article__list--green-marker">
 
                 <span class="article__header article__header--small">Содержание</span>
@@ -261,8 +262,8 @@
 
                 </div>
 
-                <div class="article__picture">
-                    <img class="article__img" src="images/PNG/Article/Group.png" alt="Главное фото">
+                <div class="article__container article__container--picture">
+                    <img class="article__img article__img--size-5" src="images/PNG/Article/Group.png" alt="фото">
                 </div>
 
 
@@ -298,13 +299,35 @@
        </section>
 
        <aside class="aside">
-            <div class="make-an-appointment">
-                <img src="images/PNG/Article/make-an-appointment.png" alt="">
-                <button class="articles_button" type="button">Ёще</button>
+            <div class="appointment">
+                <div class="appointment__container appointment__container--body">
+                    <img src="images/PNG/Article/make-an-appointment.png" alt="">
+
+                    <div class="appointment__container appointment__container--text">
+                        <span class="appointment__header">Загружаем свободные окошки</span>
+                        <span class="appointment__text">Все в порядке, сейчас мы перенаправим вас в сервис записи Qlick, через который удобно выбрать дату,  время встречи и оплатить её</span>
+                    </div>
+                    
+                
+                    <button type="button" class="button button--appointment">Подобрать психолога</button>
+
+
+                </div>
+                
             </div>
-
-
        </aside>
+
+
+        <hr class="content__line">
+
+
+        <div class="selection-specialist">
+            <span class="selection-specialist__header">Откликается проблема?</span>
+            <span class="selection-specialist__text">Поможем подобрать специалиста по работе с подобным запросом</span>
+            <button type="button" class="button button--selection-specialist">Подобрать психолога</button>
+        </div>
+
+        
     
 
 

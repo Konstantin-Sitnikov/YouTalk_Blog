@@ -5,3 +5,48 @@
     align-self: start;
 
 }
+
+
+
+
+/*iPadPro 12.9*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .aside {
+        margin-top: 54px;
+        width: 222px;
+    }
+    
+}
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .aside {
+        margin-top: 23px;
+        width: 356px;
+    }
+    
+}
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .aside {
+        margin-top: 56px;
+        width: 100%;
+    }
+    
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .aside {
+        margin-top: 16px;
+        width: 100%;
+    }
+}

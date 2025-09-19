@@ -20,6 +20,7 @@
 @import url(__container/container--img-text-vertical.css);
 @import url(__container/container--container-img-text.css);
 @import url(__container/container--exercise.css);
+@import url(__container/container--picture.css);
 
 
 @import url(__img/img.css);
@@ -27,6 +28,7 @@
 @import url(__img/img--size-2.css);
 @import url(__img/img--size-3.css);
 @import url(__img/img--size-4.css);
+@import url(__img/img--size-5.css);
 
 
 

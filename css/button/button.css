@@ -1,6 +1,8 @@
 @import url(button--header.css);
 @import url(button--footer.css);
 @import url(button--content__articles.css);
+@import url(button--selection-specialist.css);
+@import url(button--appointment.css);
 
 
 .button {
