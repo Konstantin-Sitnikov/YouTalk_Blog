@@ -3,6 +3,7 @@
     width: 282px;
     display: flex;
     align-self: start;
+    flex-direction: column;
 
 }
 

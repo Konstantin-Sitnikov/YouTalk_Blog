@@ -1,0 +1,13 @@
+.psycholog-card__item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+
+
+.psycholog-card__item--work {
+    align-items: center;
+}

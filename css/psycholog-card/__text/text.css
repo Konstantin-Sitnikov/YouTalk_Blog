@@ -1,0 +1,25 @@
+
+.psycholog-card__text {
+    font-family: Montserrat-Regular;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.psycholog-card__text--info {
+
+    font-family: Montserrat-Medium;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A2A7B1;
+
+}
+
+
+.psycholog-card__text--tag {
+
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    line-height: 18px;
+
+}

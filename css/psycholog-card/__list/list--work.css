@@ -1,0 +1,15 @@
+.psycholog-card__list--work {
+    gap: 8px;
+}
+
+
+
+
+.psycholog-card__list--work .psycholog-card__item::before {
+    content: "";
+    background-image: url(../../../images/SVG/marker.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}

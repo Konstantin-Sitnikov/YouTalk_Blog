@@ -1,0 +1,17 @@
+.psycholog-card__list--info {
+    margin-top: 4px;
+    flex-direction: row;
+    gap: 8px;
+}
+ 
+
+
+
+
+.psycholog-card__list--info .psycholog-card__item:not(:nth-last-child(1))::after {
+    content: "·";
+    font-family: Montserrat-Medium;
+    font-size: 14px;
+    line-height: 20px;
+    color: #A2A7B1;
+}

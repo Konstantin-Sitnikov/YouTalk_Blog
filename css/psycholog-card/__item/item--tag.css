@@ -1,0 +1,10 @@
+.psycholog-card__item--tag {
+    gap: 4px;
+    padding: 3px 6px;
+    width: fit-content;
+    gap: 4px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgba(243, 244, 248, 0.7);;
+    align-items: baseline;
+}
