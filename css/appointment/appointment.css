@@ -55,6 +55,10 @@
 
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    .appointment {
+        width: 356px;
+    }
    
     .appointment__container--body {
         margin: 22.55px 30.46px 14.45px;

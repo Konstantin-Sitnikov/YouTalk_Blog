@@ -4,6 +4,7 @@
     display: flex;
     align-self: start;
     flex-direction: column;
+    gap: 24px;
 
 }
 
@@ -26,7 +27,11 @@
     
     .aside {
         margin-top: 23px;
-        width: 356px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 36px;
+        column-gap: 16px;
     }
     
 }
