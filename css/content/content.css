@@ -6,8 +6,13 @@
 
 .content {
     width: 1200px;
-    display: flex;    
+    display: flex;
+    margin-bottom: 158px;    
 }
+
+
+
+
 
 
 .content__blog {        
@@ -15,11 +20,14 @@
 }
 
 
+
+
 /*iPadPro 12.9*/
 @media (min-width: 1024px) and (max-width: 1439px) {
 
     .content {
         width: 960px;
+        margin-bottom: 71px;
     }    
 }
 
@@ -28,6 +36,7 @@
     
     .content {
         width: 728px;
+        margin-bottom: 59px;
     }
 
 }
@@ -37,6 +46,7 @@
     
     .content {
         width: 374px;
+        margin-bottom: 127px;
     }
 }
 
@@ -45,5 +55,6 @@
 
     .content {
         width: 288px;
+        margin-bottom: 60px;
     }
 }

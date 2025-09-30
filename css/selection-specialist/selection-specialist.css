@@ -1,10 +1,22 @@
 .selection-specialist {
     margin-top: 72px;
+    width: 1200px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.selection-specialist__container {
     box-sizing: border-box;
     width: 348px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 158px;
+}
+
+.selection-specialist__img {
+    margin-right: 29px;
 }
 
 .selection-specialist__header {

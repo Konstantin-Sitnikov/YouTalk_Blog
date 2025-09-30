@@ -23,6 +23,17 @@
     gap: 8px;
 }
 
+
+@media (max-width: 1439px) {
+
+    .article__list--links {
+        display: none;
+    }
+
+}
+
+
+
 .article__list--sub-content {
     margin: 0;
     gap: 4px;

@@ -27,6 +27,7 @@
     
     .aside {
         margin-top: 23px;
+
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
@@ -43,6 +44,7 @@
 
     .aside {
         margin-top: 56px;
+
         width: 100%;
     }
     

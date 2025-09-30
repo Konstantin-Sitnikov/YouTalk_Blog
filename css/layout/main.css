@@ -1,5 +1,3 @@
-
-
 .body {
     width: 1440px;
     padding: 0;
@@ -8,17 +6,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    contain: layout;
 
     
 }
 
 
 .body--background-article {
-    background: url(../../images/PNG/background/Blog.png) bottom center / 1440px 386px no-repeat,
-     url(../../images/PNG/background/Article_background_img_1.png) center right / 218px 606px no-repeat;  
+    background: 
+    url(../../images/PNG/background/Blog.png) bottom center / 1440px 386px no-repeat,
+    url(../../images/PNG/background/Article_background_img_1.png) center right/ 218px 606px no-repeat,
+    url(../../images/PNG/background/Article_background_img_1.png) top 96% right / 73px 240px no-repeat;
+}
 
+@media (max-width: 1439px) {
+
+    .body--background-article {
+        background: none;
+    }
 
 }
+
 
 
 /*iPadPro 12.9*/
