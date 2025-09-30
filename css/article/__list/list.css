@@ -23,12 +23,20 @@
     gap: 8px;
 }
 
+.article__list--sub-content {
+    margin: 0;
+    gap: 4px;
+}
+
+
+
+
 .article__list--small-marker .article__item:not(:nth-last-child(1))::after {
     content: "·";
     }
 
 
-.article__list--green-marker .article__item::before {
+.article__list--green-marker > .article__item::before {
     content: "";
     background-image: url(../../../images/SVG/marker.svg);
     background-position: center;

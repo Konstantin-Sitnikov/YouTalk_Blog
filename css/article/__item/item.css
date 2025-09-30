@@ -4,3 +4,6 @@
     gap: 8px;
 }
 
+.article__item--sub-content {
+    margin-left: 16px;
+}

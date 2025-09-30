@@ -8,7 +8,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     
+}
+
+
+.body--background-article {
+    background: url(../../images/PNG/background/Blog.png) bottom center / 1440px 386px no-repeat,
+     url(../../images/PNG/background/Article_background_img_1.png) center right / 218px 606px no-repeat;  
+
+
 }
 
 

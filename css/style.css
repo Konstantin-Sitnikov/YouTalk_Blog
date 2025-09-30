@@ -1,36 +1,4 @@
 
-.bkgrd-img {
-    display: none;
-    position: absolute;
-    z-index: -10;
-}
-
-/*Позиционироване фоновых изображений*/
-
-.blog-bkgrd-img-pos {
-    top: 403px;
-}
-
-.bkgrd-img-pos_1 {
-    margin-top: 30%;
-    margin-left: 1222px;
-}
-
-.bkgrd-img-posn_2 {
-    margin-top: 70%;
-    margin-left: 1367px;
-}
-
-.bkgrd-img-pos_3 {
-    margin-top: 60%;
-    margin-right: 345.5px;
-}
-
-.bkgrd-img-pos_4 {
-    bottom: 0;
-}
-
-
 
 /*Основной контент*/
 /*Главная страница блога*/
@@ -149,13 +117,6 @@
 
 
 /*Фоновые изображения*/
-
-@media (min-width: 1440px) {
-   .bkgrd-img {
-    display: block;
-   }
-}
-
 
 
 
