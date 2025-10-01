@@ -1,13 +1,14 @@
 
-.footer__body {
+
+.footer__container--body {
     width: 1200px;
 }
 
 
+
 @media (max-width: 767px) {
     
-    .footer__body {
-        flex-direction: column;
+    .footer__container--body {
         align-items: start;
     }
     
@@ -17,7 +18,7 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
 
-    .footer__body {
+    .footer__container--body {
         width: 960px;
     }
 
@@ -26,7 +27,7 @@
 /*iPad mini*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    .footer__body {
+    .footer__container--body {
         width: 728px;
     }
 
@@ -37,7 +38,7 @@
 
 @media (min-width: 414px) and (max-width: 767px) {
 
-    .footer__body {
+    .footer__container--body {
         width: 375px;
     }
 
@@ -46,7 +47,7 @@
 /*iPhone SE */
 @media (min-width: 0px) and (max-width: 413px) {
 
-    .footer__body {
+    .footer__container--body {
         width: 288px;
     }
 

@@ -1,0 +1,11 @@
+.footer__text {
+    font-family: Montserrat-Bold;
+}
+
+
+.footer__text--nav {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    text-wrap: nowrap;
+}

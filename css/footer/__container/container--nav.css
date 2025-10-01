@@ -1,0 +1,25 @@
+.footer__container--nav {
+    width: 310px;
+    height: 184px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/*iPadPro 12.9 iPad mini*/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    .footer__container--nav {
+    width: 247px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .footer__container--nav {
+        width: 100%;
+    }
+
+}

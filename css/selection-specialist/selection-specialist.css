@@ -1,7 +1,6 @@
 .selection-specialist {
     margin-top: 72px;
     width: 1200px;
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
 }
