@@ -9,3 +9,58 @@
     line-height: 24px;
     text-wrap: nowrap;
 }
+
+
+.footer__text--email {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+
+.footer__text--subscription {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Montserrat-Regular;
+    color: #FFFFFF;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    opacity: 0.7;
+}
+
+
+.footer__text--links {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    opacity: 0.7;
+    line-height: 20px;
+}
+
+
+
+
+.footer__header {
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Montserrat-Bold;
+    width: 90%;
+}
+
+
+
+
+@media (max-width: 767px) {
+
+    .footer__header {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,44 @@
+.footer--index {
+    margin-top: 96px;    
+}
+
+
+
+/*iPadPro 12.9*/
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .footer--index {
+        margin-top: 60px;
+    }
+    
+}
+
+/*iPad mini*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .footer--index {
+        margin-top: 55px;
+    }
+    
+}
+
+
+/*iPhone 11 Pro Max*/
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .footer--index {
+        margin-top: 59px;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+    .footer--index {
+        margin-top: 59px;
+    }
+
+}

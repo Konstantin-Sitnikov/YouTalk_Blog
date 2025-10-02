@@ -1,0 +1,38 @@
+
+.footer__sub-form {
+    width: 384px;
+    height: 48px;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer__sub-form:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+    .footer__sub-form {
+    width: 375px;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+
+    .footer__sub-form {
+        width: 288px;
+    }
+}

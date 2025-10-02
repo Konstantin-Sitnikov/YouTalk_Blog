@@ -1,22 +1,15 @@
 @import url(__filter/filter.css);
 @import url(__articles/articles.css);
-@import url(content--article.css);
 @import url(__line/line.css);
+@import url(__header/header.css);
+@import url(__header/header--article.css);
+@import url(__header/header--index.css);
 
 
 .content {
     width: 1200px;
     display: flex;
-    margin-bottom: 158px;    
-}
-
-
-
-
-
-
-.content__blog {        
-    flex-direction: column;
+ 
 }
 
 
@@ -27,7 +20,6 @@
 
     .content {
         width: 960px;
-        margin-bottom: 71px;
     }    
 }
 
@@ -36,7 +28,6 @@
     
     .content {
         width: 728px;
-        margin-bottom: 59px;
     }
 
 }
@@ -46,7 +37,6 @@
     
     .content {
         width: 374px;
-        margin-bottom: 127px;
     }
 }
 
@@ -55,6 +45,5 @@
 
     .content {
         width: 288px;
-        margin-bottom: 60px;
     }
 }

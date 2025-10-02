@@ -20,13 +20,25 @@
     url(../../images/PNG/background/Article_background_img_1.png) top 90% right / 73px 240px no-repeat;
 }
 
+
+.body--index {
+    background: 
+    url(../../images/PNG/background/Blog.png) top 401px center / 100% 386px no-repeat;
+
+}
+
 @media (max-width: 1439px) {
 
     .body--article {
         background: none;
     }
+    .body--index {
+        background: none;
+    }
 
 }
+
+
 
 
 

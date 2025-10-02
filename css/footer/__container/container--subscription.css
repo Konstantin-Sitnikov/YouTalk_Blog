@@ -1,0 +1,49 @@
+.footer__container--subscription {
+    width: 488px;
+    height: 170px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+
+
+@media (max-width: 767px) {
+    
+    .footer__container--subscription {
+        height: 200px;
+        gap: 12px;
+    }
+
+}
+
+/*iPadPro 12.9 iPad mini*/
+
+@media (min-width: 768px) and (max-width: 1439px) {
+
+    .footer__container--subscription {
+    width: 450px;
+    }
+
+}
+
+
+/*iPhone 11 Pro Max */
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+
+    .footer__container--subscription {
+    width: 375px;
+    }
+
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+
+
+    .footer__container--subscription {
+        width: 288px;
+    }
+}

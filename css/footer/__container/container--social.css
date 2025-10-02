@@ -1,0 +1,13 @@
+.footer__container--social {
+    width: 221px;
+    height: 122px;
+    gap: 40px;
+}
+
+.footer__container--networks {
+    gap: 16px;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+

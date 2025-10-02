@@ -9,3 +9,27 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+.article__header--main {
+    display: inline-block;
+    font-size: 48px;
+    line-height: 56px;
+    font-family: Montserrat-Bold;
+}
+
+/*iPhone 11 Pro Max */
+@media (min-width: 414px) and (max-width: 767px) {
+    .article__header--main {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+/*iPhone SE */
+@media (min-width: 0px) and (max-width: 413px) {
+    
+    .article__header--main {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}

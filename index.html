@@ -7,9 +7,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/header/header.css" type="text/css">
     <link rel="stylesheet" href="css/footer/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/footer/footer--index.css" type="text/css">  
+
+
+
     <link rel="stylesheet" href="css/button/button.css" type="text/css">
     <link rel="stylesheet" href="css/heading/heading.css" type="text/css">
     <link rel="stylesheet" href="css/content/content.css" type="text/css">
+    <link rel="stylesheet" href="css/content/content--blog.css" type="text/css">
 
     <link rel="stylesheet" href="css/breadcrumb/breadcrumb.css" type="text/css">
 
@@ -23,8 +28,7 @@
 </head>
 
 
-<body class="body">
-    <img class="bkgrd-img blog-bkgrd-img-pos" src="images/PNG/background/Blog.png" alt="Фоновое изображение">
+<body class="body body--index">
 
 
     <header class="header">
@@ -98,7 +102,7 @@
             </ul>
         </nav>
 
-        <span class="heading heading--index">Блог</span>
+        <span class="content__header">Блог</span>
 
         <div class="content__filter">
             <input type="checkbox" class="content__filter-input" id="filter-input-1"/>
@@ -337,32 +341,32 @@
        </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer__body">
-            <div class="footer__nav-sub-soc">                
-                <nav class="footer__nav">
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">О нас</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Тарифы</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Для бизнеса</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Психологам</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">FAQ</a></li>                
+    <footer class="footer footer--index">
+        <div class="footer__container footer__container--body">
+            <div class="footer__container footer__container--nav-sub-soc">                
+                <nav class="footer__container footer__container--nav">
+                    <ul class="footer__list footer__list--nav">
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">О нас</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Тарифы</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Для бизнеса</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Психологам</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">FAQ</span></a></li>                
                     </ul>
 
 
-                    <ul class="footer__nav-list">
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Блог</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Вебинары</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Подкаст</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Сертификат</a></li>
-                        <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+                    <ul class="footer__list footer__list--nav">
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Блог</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Вебинары</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Подкаст</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Сертификат</span></a></li>
+                        <li class="footer__item"><a href="#" class="footer__link"><span class="footer__text footer__text--nav">Контакты</span></a></li>
                     </ul>
 
                 </nav>
 
-                <div class="footer__subscription">
-                    <h4 class="footer__sub-head">Одно письмо в неделю со свежими новостями и акциями</h4>
-                    <form class="footer__sub-email" action="#">
+                <div class="footer__container footer__container--subscription">
+                    <span class="footer__header">Одно письмо в неделю со свежими новостями и акциями</span>
+                    <form class="footer__text footer__text--email" action="#">
                     
                             <input class="footer__sub-form" type="email" name="mail" placeholder="Ваш e-mail" required>
                             <button class="button button--footer" type="submit">
@@ -372,14 +376,14 @@
                                 </button>
                     
                     </form>
-                    <p class="footer__sub-text">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
+                    <p class="footer__text footer__text--subscription">Подписываясь, я соглашаюсь на обработку персональных данных в соответствии 
                         с ФЗ РФ № 152-ФЗ «О персональных данных»,
                         а также с Политикой конфиденциальности</p>
 
 
                 </div>
 
-                <div class="footer__social">
+                <div class="footer__container footer__container--social">
                     <svg width="221" height="50" viewBox="0 0 221 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_4492_2055)">
                         <path d="M83.2307 23.751C86.2668 19.2628 87.1299 15.3838 85.7388 13.9927C85.3022 13.5662 84.6421 13.3428 83.779 13.3428C81.8801 13.3428 79.0775 14.409 75.9805 16.5008C77.2701 17.4959 78.5597 18.623 79.829 19.8923C81.0983 21.1616 82.2355 22.4512 83.2205 23.7408L83.2307 23.751Z" fill="white"/>
@@ -405,8 +409,8 @@
                         </defs>
                         </svg>
 
-                    <div class="footer__networks">
-                        <a class="footer__net-link" href="#">
+                    <div class="footer__container footer__container--networks">
+                        <a class="footer__link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2039)">
                             <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
@@ -425,7 +429,7 @@
                             </svg>
                         </a>
 
-                        <a class="footer__net-link" href="#">
+                        <a class="footer__link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2043)">
                             <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
@@ -444,7 +448,7 @@
                             </svg>
                         </a>
 
-                        <a class="footer__net-link" href="#">
+                        <a class="footer__link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2047)">
                             <rect width="32" height="32" rx="16" fill="#EFF5FB"/>
@@ -464,7 +468,7 @@
 
                         </a>
 
-                        <a class="footer__net-link" href="#">
+                        <a class="footer__link" href="#">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_4492_2052)">
                             <path d="M0 16C0 7.16343 7.16343 0 16 0C24.8366 0 32 7.16343 32 16C32 24.8366 24.8366 32 16 32C7.16343 32 0 24.8366 0 16Z" fill="#333333"/>
@@ -487,11 +491,12 @@
             <hr class="footer__line">
 
 
-            <div class="footer__lower-bloсk">
-                <p class="footer__lower-text">©Youtalk, 2018 – 2022</p>
-                <a class="footer__lower-link" href="#"><p class="footer__lower-text">Юридические документы</p></a>
-                <a class="footer__lower-link" href="#"><p class="footer__lower-text">Способы оплаты</p></a>
-            </div>
+            <ul class="footer__list footer__list--links">
+                <li class="footer__item"><span class="footer__text footer__text--links">©Youtalk, 2018 – 2022</span></li>
+                <li class="footer__item"><a class="footer__link" href="#"><span class="footer__text footer__text--links">Юридические документы</span></a></li>
+                <li class="footer__item"><a class="footer__link" href="#"><p class="footer__text footer__text--links">Способы оплаты</p></a></li>
+            </ul>
+
         </div>
     </footer>
 </body>

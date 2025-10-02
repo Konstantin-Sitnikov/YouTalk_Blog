@@ -12,3 +12,27 @@
     justify-content: space-between;
     gap: 16px;
 }
+
+
+
+
+.footer__list--links {
+    margin-top: 16px;
+    justify-content: start;
+    align-items: start;
+    gap: 48px;
+
+}
+
+
+
+@media (max-width: 767px) {
+    
+    .footer__list--links {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin-top: 16px;
+        gap: 20px;
+    } 
+}
